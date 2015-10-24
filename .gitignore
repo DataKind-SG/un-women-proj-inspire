@@ -1,3 +1,8 @@
+#### custom added to standard python .gitignore ####
+source_data/
+.idea/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

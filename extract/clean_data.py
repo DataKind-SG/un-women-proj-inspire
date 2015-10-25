@@ -9,10 +9,10 @@ import datetime
 def create_table_sqlite(conn):
     cursor = conn.cursor()
     cursor.executescript('drop table if exists un_women;')
-    create_table_query = 'create table un_women (year text,application_id text,project_name text,institution text,' \
-                         'project_location_1 text, project_location_2 text, summary text, ' \
-                         'project_details text, name_1 text, name_2 text, project_team text, dob1 text,' \
-                         ' email_1 text, file_name text, video_link_website text, date_time text, other_details text)'
+    create_table_query = 'create table un_women (year text,application_id text,project_name text,institution text, project_location_1 text, ' \
+                         'project_location_2 text, summary text, project_details text, name_1 text, name_2 text, ' \
+                         'project_team text, dob1 text, email_1 text, file_name text, video_link_website text, ' \
+                         'date_time text, other_details text, sector text)'
     cursor.execute(create_table_query)
     conn.commit()
 
@@ -74,7 +74,7 @@ def process_sheet_2011_2014(ws, conn):
                      "video_link_website": clean_field(ws['O' + str(row)].value),
                      "date_time": clean_field(ws['P' + str(row)].value),
                      "other_details": clean_field(process_other_details(ws, row, openpyxl.utils.get_column_letter(
-                         highest_col)))}
+                         highest_col))), "sector": ''}
 
         save_to_sqlite(data_dict, conn)
 
@@ -101,12 +101,59 @@ def main(argv):
     return spreadsheet_filename, database_filename
 
 
+# everything result that is not result_3, result16 to 22 is included into other details.
+
+
+def process_other_details_2015(ws_data):
+    ret_value = ''
+    for key, value in ws_data.iteritems():
+        if key == 'result_1':
+            ret_value += value
+    return ret_value
+
+
+def process_sector_2015(ws_data):
+    ret_value = []
+    if ws_data["result_16"] == 1:
+        ret_value.append('Education')
+    if ws_data["result_17"] == 1:
+        ret_value.append('Environment \& Sustainability')
+
+    if ws_data["result_18"] == 1:
+        ret_value.append('Science \& Technology')
+
+    if ws_data["result_19"] == 1:
+        ret_value.append('Health')
+
+    if ws_data["result_20"] == 1:
+        ret_value.append('Entrepreneurship \& Business')
+    other = ws_data["result_21"]
+    if other == 1:
+        ret_value.append(ws_data["result_22"])
+
+    return ', '.join(ret_value)
+
+
 def process_sheet_2015(sheet2015, conn):
     ws_props = sheet2015.sheet_properties
     tab_color = ws_props.tabColor
     if tab_color is None:
         print 'Processing sheet: ' + sheet2015.title
+        highest_row = sheet2015.get_highest_row()
+        ws_data = {}
+        for row in range(2, highest_row + 1):
+            ws_data[sheet2015['A' + str(row)].value] = sheet2015['C' + str(row)].value
 
+        data_dict = {"year": 2015, "application_id": ws_data["id"], "project_name": ws_data["general_1"],
+                     "institution": ws_data["organization_1"], "project_location_1": ws_data["contact_8"],
+                     "project_location_2": ws_data["organization_6"], "summary": ws_data["general_3"],
+                     "project_details": ws_data["result_3"], "email_1": ws_data["contact_12"],
+                     "name_1": ws_data["contact_1"] + ' ' + ws_data["contact_2"], "name_2": ws_data["contact_4"],
+                     "project_team": ws_data["team_3"], "dob1": '', "file_name": ws_data["docsub_5"],
+                     "video_link_website": ws_data["docsub_4"], "date_time": '',
+                     "other_details": process_other_details_2015(ws_data), "sector": process_sector_2015(ws_data)}
+
+        save_to_sqlite(data_dict, conn)
 
 # running the script:
 # python process_data.py -i project_inspire_2011_2014.xlsx,project_inspire_2015.xlsx -o un_women_data.sqlite
@@ -135,4 +182,6 @@ if __name__ == '__main__':
     del wb2015_sheet_names[0]
     for sheet_2015 in wb2015_sheet_names:
         process_sheet_2015(wb2015.get_sheet_by_name(sheet_2015), conn)
+
+
 

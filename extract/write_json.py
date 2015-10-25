@@ -47,13 +47,6 @@ def get_year_data(year):
     return data
 
 
-def get_test_data(year):
-    data = [{'project_year': year, 'title': 'asdf', 'country': 'Singapore'},
-            {'project_year': year, 'title': 'qwer', 'country': 'Malaysia'},
-            {'project_year': year, 'title': 'zxcv', 'country': 'Indonesia'}]
-    return data
-
-
 def get_country_code(country_name, iso_map):
     try:
         country_code = iso_map[country_name]
@@ -62,6 +55,7 @@ def get_country_code(country_name, iso_map):
         country_code = ''
 
     return country_code
+
 
 def transform_data(input, iso_map, name_map):
     output = list()

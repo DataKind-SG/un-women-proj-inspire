@@ -10,18 +10,13 @@ library(openxlsx)
 #                        country_impact, country_impact_name
 # ===========================================================================
 
-# NOTE: json file used is a sample file.
 inspire2011 <- fromJSON("cleaned_applications_2011.json")
 inspire2012 <- fromJSON("cleaned_applications_2012.json")
 inspire2013 <- fromJSON("cleaned_applications_2013.json")
 inspire2014 <- fromJSON("cleaned_applications_2014.json")
-# pending 2015 cleaning
-#inspire2015 <- fromJSON("cleaned_applications_2015.json")
+inspire2015 <- fromJSON("cleaned_applications_2015.json")
 
-inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014)
-
-# pending 2015 cleaning
-#inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
+inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
 
 inspire_cleaned <- inspire %>% 
     select(project_year, country_application, country_application_name, country_impact, country_impact_name) %>%
@@ -36,13 +31,15 @@ inspire_cleaned$project_year <- factor(inspire_cleaned$project_year)
 # Name of all countries that applied per year, 2011 - 2015
 inspire_country_names_applied <- inspire_cleaned %>% 
     group_by(project_year) %>% 
-    select(country_application_name)
+    select(country_application_name) %>%
+    unique()
 write.xlsx(inspire_country_names_applied, file = "01 application country names per year.xlsx")
 
 # Name of all countries that were impacted per year, 2011 - 2015
 inspire_country_names_impacted <- inspire_cleaned %>% 
     group_by(project_year) %>% 
-    select(country_impact_name)
+    select(country_impact_name) %>%
+    unique()
 write.xlsx(inspire_country_names_impacted, file = "02 impact country names per year.xlsx")
 
 # Number of countries that applied per year, 2011 - 2015
@@ -72,7 +69,7 @@ inspire_numbers_impact <- inspire_cleaned %>%
 write.xlsx(inspire_numbers_impact, file = "06 impact country numbers per year per country.xlsx")
 
 # ===========================================================================
-# Code for visualization data
+# Generate visualization data (JSON)
 # ===========================================================================
 
 country_impact_lookup <- inspire_cleaned %>% select(country_impact,country_impact_name) %>% unique()

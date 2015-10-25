@@ -147,7 +147,7 @@ def process_sheet_2015(sheet2015, conn):
         data_dict = {"year": 2015, "application_id": ws_data["id"], "project_name": ws_data["general_1"],
                      "institution": ws_data["organization_1"], "project_location_1": ws_data["contact_8"],
                      "project_location_2": ws_data["organization_6"], "summary": ws_data["general_3"],
-                     "project_details": ws_data["result_3"],
+                     "project_details": ws_data["result_3"], "email_1": ws_data["contact_12"],
                      "name_1": ws_data["contact_1"] + ' ' + ws_data["contact_2"], "name_2": ws_data["contact_4"],
                      "project_team": ws_data["team_3"], "dob1": '', "file_name": ws_data["docsub_5"],
                      "video_link_website": ws_data["docsub_4"], "date_time": '',
@@ -182,5 +182,6 @@ if __name__ == '__main__':
     del wb2015_sheet_names[0]
     for sheet_2015 in wb2015_sheet_names:
         process_sheet_2015(wb2015.get_sheet_by_name(sheet_2015), conn)
+
 
 

@@ -1,5 +1,6 @@
 __author__ = 'cq'
 
+import sys, getopt
 import openpyxl
 import sqlite3 as db
 import datetime
@@ -16,7 +17,7 @@ def create_table_sqlite(conn):
     conn.commit()
 
 
-def save_tosqlite(data,conn):
+def save_to_sqlite(data, conn):
     cursor = conn.cursor()
     qmarks = ', '.join('?' * len(data))
     columns = ', '.join(data.keys())
@@ -27,8 +28,8 @@ def save_tosqlite(data,conn):
 
 
 def read_file_return_workbook(filename):
-    wb = openpyxl.load_workbook(filename)
-    return wb
+    worksheet = openpyxl.load_workbook(filename)
+    return worksheet
 
 
 def process_other_details(ws, row, max_letter):
@@ -47,7 +48,7 @@ def process_other_details(ws, row, max_letter):
 
 def clean_field(value):
     ret_value = value if value is not None else ''
-    if isinstance(ret_value,str):
+    if isinstance(ret_value, str):
         ret_value = unicode(ret_value, "utf-8")
     return ret_value
 
@@ -56,9 +57,8 @@ def process_sheet_2011_2014(ws, conn):
     print 'Processing sheet: ' + ws.title
     highest_row = ws.get_highest_row()
     highest_col = ws.get_highest_column()
-    print highest_col
-    for row in range(2, highest_row + 1):
 
+    for row in range(2, highest_row + 1):
         data_dict = {"year": clean_field(ws['A' + str(row)].value),
                      "application_id": clean_field(ws['B' + str(row)].value),
                      "project_name": clean_field(ws['C' + str(row)].value),
@@ -76,19 +76,63 @@ def process_sheet_2011_2014(ws, conn):
                      "other_details": clean_field(process_other_details(ws, row, openpyxl.utils.get_column_letter(
                          highest_col)))}
 
-        save_tosqlite(data_dict, conn)
+        save_to_sqlite(data_dict, conn)
 
+
+# return file to read and database to save.
+def main(argv):
+    spreadsheet_filename = ''
+    database_filename = ''
+
+    try:
+        opts, args = getopt.getopt(argv, "hi:o:", ["ifile=", "ofile="])
+    except getopt.GetoptError:
+        print 'process_data.py -i <spreadsheet_file> -o <database_name>'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'process_data.py -i <spreadsheet_file2011-2014, spreadsheet_file2015> -o <database_name>'
+            sys.exit()
+        elif opt in ("-i", "--ifile"):
+            spreadsheet_filename = arg
+        elif opt in ("-o", "--ofile"):
+            database_filename = arg
+
+    return spreadsheet_filename, database_filename
+
+
+def process_sheet_2015(sheet2015, conn):
+    ws_props = sheet2015.sheet_properties
+    tab_color = ws_props.tabColor
+    if tab_color is None:
+        print 'Processing sheet: ' + sheet2015.title
+
+
+# running the script:
+# python process_data.py -i project_inspire_2011_2014.xlsx,project_inspire_2015.xlsx -o un_women_data.sqlite
 
 if __name__ == '__main__':
-    file_name = "/Users/cq/Dev/Personal/DataKindSG/un_women/project_inspire_2011_2015.xlsx"
 
-    wb = read_file_return_workbook(file_name)
-    sheet_names = wb.get_sheet_names()
-    del sheet_names[0]
-    print sheet_names
+    ws_name, db_name = main(sys.argv[1:])
 
-    conn = db.connect('un_women_data.sqlite')
+    ws2011, ws2015 = ws_name.split(",")
+
+    conn = db.connect(db_name)
     create_table_sqlite(conn)
 
-    for sheet in sheet_names:
-        process_sheet_2011_2014(wb.get_sheet_by_name(sheet), conn)
+    # process 2011-2014 file
+    wb2011 = read_file_return_workbook(ws2011)
+    wb2011_sheet_names = wb2011.get_sheet_names()
+    del wb2011_sheet_names[0]
+
+    for sheet in wb2011_sheet_names:
+        process_sheet_2011_2014(wb2011.get_sheet_by_name(sheet), conn)
+
+    # process 2015 file
+    wb2015 = read_file_return_workbook(ws2015)
+    wb2015_sheet_names = wb2015.get_sheet_names()
+
+    del wb2015_sheet_names[0]
+    for sheet_2015 in wb2015_sheet_names:
+        process_sheet_2015(wb2015.get_sheet_by_name(sheet_2015), conn)
+

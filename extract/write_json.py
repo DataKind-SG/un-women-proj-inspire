@@ -10,6 +10,16 @@ def import_iso_map():
     return iso_map
 
 
+def import_rev_map_from_file(filename):
+    this_map = dict()
+    with open(filename, 'rt') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            this_map[row['Code']] = row['Name']
+
+    return this_map
+
+
 def import_map_from_file(filename):
     this_map = dict()
     with open(filename, 'rt') as csvfile:
@@ -53,7 +63,7 @@ def get_country_code(country_name, iso_map):
 
     return country_code
 
-def transform_data(input, iso_map):
+def transform_data(input, iso_map, name_map):
     output = list()
     for row in input:
         out_row = dict()
@@ -65,8 +75,12 @@ def transform_data(input, iso_map):
 
         country_name = row['project_location_2'].strip()
         country_code = get_country_code(country_name, iso_map)
+        if country_code:
+            clean_country_name = name_map[country_code]
+        else:
+            clean_country_name = country_name
 
-        out_row['country_application_name'] = country_name
+        out_row['country_application_name'] = clean_country_name
         out_row['country_impact_name'] = country_name # needs modification
         out_row['country_application'] = country_code
         out_row['country_impact'] = country_code # needs modification
@@ -84,10 +98,11 @@ def write_data(data, year):
 
 def main():
     iso_map = import_iso_map()
+    name_map = import_rev_map_from_file('../data/ISO_mapping.csv')
     for year in range(2011, 2015):
         raw_data = get_year_data(year)
 
-        transformed_data = transform_data(raw_data, iso_map)
+        transformed_data = transform_data(raw_data, iso_map, name_map)
         write_data(transformed_data, year)
 
 

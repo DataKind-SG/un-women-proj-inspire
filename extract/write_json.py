@@ -77,6 +77,16 @@ def get_country_code(country_name, iso_map):
     return country_code
 
 
+def get_country_name(country_code, name_map):
+    try:
+        country_name = name_map[country_code]
+    except KeyError:
+        country_name = ''
+
+    return country_name
+
+
+
 def transform_data(input_data, iso_map, name_map, delete_set):
     output = list()
     for row in input_data:
@@ -105,12 +115,16 @@ def transform_data(input_data, iso_map, name_map, delete_set):
             output.append(out_row)
         else:
             with open('../data/out.log', 'at') as a:
-                a.write('(Year, ID) = ({}, {}) has been excluded.'.format(out_row['project_year'], out_row['project_id']))
+                a.write('(Year, ID) = ({}, {}) has been excluded.\n'
+                        .format(out_row['project_year'], out_row['project_id']))
 
     return output
 
 
 def change_data(data, change_mapping, name_map):
+    with open('../data/out.log', 'at') as a:
+        a.write('\n\n(Appl Country, Appl Code, Impact Country, Impact Code)\n')
+
     for row in data:
         project_tuple = (row['project_year'], row['project_id'])
         if project_tuple in change_mapping:
@@ -118,17 +132,16 @@ def change_data(data, change_mapping, name_map):
 
             new_countries = change_mapping[project_tuple]
             row['country_application'] = new_countries[0]
-            row['country_application_name'] = name_map[new_countries[0]]
+            row['country_application_name'] = get_country_name(new_countries[0], name_map)
 
             row['country_impact'] = new_countries[1]
-            row['country_impact_name'] = name_map[new_countries[1]]
+            row['country_impact_name'] = get_country_name(new_countries[1], name_map)
 
             new_countries_string = get_countries_string(row)
 
             with open('../data/out.log', 'at') as a:
-                a.write('(Year, ID) = ({}, {}) has been changed from '
-                        '(Appl Country, Appl Code, Impact Country, Impact Code) = ({}) to ({}).'
-                        .format(old_countries_string, new_countries_string))
+                a.write('(Year, ID) = {} has been changed from: ({}) to: ({}).\n'
+                        .format(str(project_tuple), old_countries_string, new_countries_string))
 
 
 def get_countries_string(row):
@@ -154,7 +167,7 @@ def main():
         raw_data = get_year_data(year)
 
         transformed_data = transform_data(raw_data, iso_map, name_map, delete_set)
-        # change_data(transformed_data, change_map)
+        change_data(transformed_data, change_map, name_map)
         write_data(transformed_data, year)
 
 

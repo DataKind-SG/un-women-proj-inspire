@@ -22,10 +22,10 @@ def dict_factory(cursor, row):
 
 def get_year_data(year):
     y = (year,)
-    with sqlite3.connect('../data/early.db') as conn:
+    with sqlite3.connect('../source_data/early.db') as conn:
         conn.row_factory = dict_factory
         c = conn.cursor()
-        c.execute('SELECT * FROM stocks WHERE project_year=?', y)
+        c.execute('SELECT * FROM table WHERE project_year=?', y)
         data = c.fetchall()
     return data
 

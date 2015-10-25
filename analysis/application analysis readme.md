@@ -42,3 +42,5 @@ In the same directory, the following files will be created:
 
 Note: "impacted.json" file is intended for visualization purposes.
 
+These files can be referenced from the /data directory of this repository.
+

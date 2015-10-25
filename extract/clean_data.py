@@ -8,9 +8,10 @@ import datetime
 def create_table_sqlite(conn):
     cursor = conn.cursor()
     cursor.executescript('drop table if exists un_women;')
-    create_table_query = 'create table un_women (year,application_id,project_name,institution,project_location_1,' \
-                         'project_location_2, summary, project_details, name_1, name_2, project_team, dob1, email_1, ' \
-                         'file_name, video_link_website, date_time, other_details)'
+    create_table_query = 'create table un_women (year text,application_id text,project_name text,institution text,' \
+                         'project_location_1 text, project_location_2 text, summary text, ' \
+                         'project_details text, name_1 text, name_2 text, project_team text, dob1 text,' \
+                         ' email_1 text, file_name text, video_link_website text, date_time text, other_details text)'
     cursor.execute(create_table_query)
     conn.commit()
 
@@ -18,8 +19,10 @@ def create_table_sqlite(conn):
 def save_tosqlite(data,conn):
     cursor = conn.cursor()
     qmarks = ', '.join('?' * len(data))
-    query = "insert into un_women (%s) values (%s)" % (qmarks, qmarks)
-    cursor.execute(query, data.keys() + data.values())
+    columns = ', '.join(data.keys())
+    query = ('insert into un_women ({}) VALUES ({})'.format(columns, qmarks)).encode('utf-8')
+
+    cursor.execute(query, data.values())
     conn.commit()
 
 
@@ -42,6 +45,13 @@ def process_other_details(ws, row, max_letter):
     return other_details
 
 
+def clean_field(value):
+    ret_value = value if value is not None else ''
+    if isinstance(ret_value,str):
+        ret_value = unicode(ret_value, "utf-8")
+    return ret_value
+
+
 def process_sheet_2011_2014(ws, conn):
     print 'Processing sheet: ' + ws.title
     highest_row = ws.get_highest_row()
@@ -49,25 +59,23 @@ def process_sheet_2011_2014(ws, conn):
     print highest_col
     for row in range(2, highest_row + 1):
 
-        data_dict = {}
+        data_dict = {"year": clean_field(ws['A' + str(row)].value),
+                     "application_id": clean_field(ws['B' + str(row)].value),
+                     "project_name": clean_field(ws['C' + str(row)].value),
+                     "institution": clean_field(ws['D' + str(row)].value),
+                     "project_location_1": clean_field(ws['E' + str(row)].value),
+                     "project_location_2": clean_field(ws['f' + str(row)].value),
+                     "summary": clean_field(ws['G' + str(row)].value),
+                     "project_details": clean_field(ws['H' + str(row)].value),
+                     "name_1": clean_field(ws['I' + str(row)].value), "name_2": clean_field(ws['J' + str(row)].value),
+                     "project_team": clean_field(ws['K' + str(row)].value),
+                     "dob1": clean_field(ws['L' + str(row)].value), "email_1": clean_field(ws['M' + str(row)].value),
+                     "file_name": clean_field(ws['N' + str(row)].value),
+                     "video_link_website": clean_field(ws['O' + str(row)].value),
+                     "date_time": clean_field(ws['P' + str(row)].value),
+                     "other_details": clean_field(process_other_details(ws, row, openpyxl.utils.get_column_letter(
+                         highest_col)))}
 
-        data_dict["year"] = ws['A' + str(row)].value
-        data_dict["application_id"] = ws['B' + str(row)].value
-        data_dict["project_name"] = ws['C' + str(row)].value
-        data_dict["institution"] = ws['D' + str(row)].value
-        data_dict["project_location_1"] = ws['E' + str(row)].value
-        data_dict["project_location_2"] = ws['f' + str(row)].value
-        data_dict["summary"] = ws['G' + str(row)].value
-        data_dict["project_details"] = ws['H' + str(row)].value
-        data_dict["name_1"] = ws['I' + str(row)].value
-        data_dict["name_2"] = ws['J' + str(row)].value
-        data_dict["project_team"] = ws['K' + str(row)].value
-        data_dict["dob1"] = ws['L' + str(row)].value
-        data_dict["email_1"] = ws['M' + str(row)].value
-        data_dict["file_name"] = ws['N' + str(row)].value
-        data_dict["video_link_website"] = ws['O' + str(row)].value
-        data_dict["date_time"] = ws['P' + str(row)].value
-        data_dict["other_details"] = process_other_details(ws, row, openpyxl.utils.get_column_letter(highest_col))
         save_tosqlite(data_dict, conn)
 
 

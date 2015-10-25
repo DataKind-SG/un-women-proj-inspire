@@ -3,14 +3,14 @@ import csv
 import json
 
 
-def import_iso_map():
-    iso_map = import_map_from_file('../data/ISO_mapping.csv')
-    additional_map = import_map_from_file('../data/additional_countries.csv')
+def import_iso_to_name_maps():
+    iso_map = import_name_to_iso_map_from_file('../data/ISO_mapping.csv')
+    additional_map = import_name_to_iso_map_from_file('../data/additional_countries.csv')
     iso_map.update(additional_map)
     return iso_map
 
 
-def import_rev_map_from_file(filename):
+def import_iso_to_name_map_from_file(filename):
     this_map = dict()
     with open(filename, 'rt') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -20,7 +20,7 @@ def import_rev_map_from_file(filename):
     return this_map
 
 
-def import_map_from_file(filename):
+def import_name_to_iso_map_from_file(filename):
     this_map = dict()
     with open(filename, 'rt') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -28,6 +28,22 @@ def import_map_from_file(filename):
             this_map[row['Name']] = row['Code']
 
     return this_map
+
+
+def import_iso_changes_from_file(filename):
+    change_map = dict()
+    with open(filename, 'rt') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            change_map[(row['Year'], row['ID'])] = (row['Application_Code'], row['Impact_Code'])
+
+
+def import_deletes(filename):
+    delete_set = set()
+    with open(filename, 'rt') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            delete_set.add((row['Year'], row['ID']))
 
 
 def dict_factory(cursor, row):
@@ -57,9 +73,9 @@ def get_country_code(country_name, iso_map):
     return country_code
 
 
-def transform_data(input, iso_map, name_map):
+def transform_data(input_data, iso_map, name_map):
     output = list()
-    for row in input:
+    for row in input_data:
         out_row = dict()
         out_row['project_details_other'] = row['other_details']
         out_row['project_id'] = row['application_id']
@@ -75,9 +91,9 @@ def transform_data(input, iso_map, name_map):
             clean_country_name = country_name
 
         out_row['country_application_name'] = clean_country_name
-        out_row['country_impact_name'] = country_name # needs modification
+        out_row['country_impact_name'] = clean_country_name
         out_row['country_application'] = country_code
-        out_row['country_impact'] = country_code # needs modification
+        out_row['country_impact'] = country_code
         out_row['project_details'] = row['project_details']
         out_row['project_year'] = row['year']
         output.append(out_row)
@@ -91,8 +107,8 @@ def write_data(data, year):
 
 
 def main():
-    iso_map = import_iso_map()
-    name_map = import_rev_map_from_file('../data/ISO_mapping.csv')
+    iso_map = import_iso_to_name_maps()
+    name_map = import_iso_to_name_map_from_file('../data/ISO_mapping.csv')
     for year in range(2011, 2016):
         raw_data = get_year_data(year)
 

@@ -43,7 +43,6 @@ inspire_country_names_impacted <- inspire_cleaned %>%
 write.xlsx(inspire_country_names_impacted, file = "02 impact country names per year.xlsx")
 
 # Number of countries that applied per year, 2011 - 2015
-# NOTE: Output is Country Code currently
 inspire_countries_applied <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     summarise(count=length(country_application_name))
@@ -70,6 +69,11 @@ write.xlsx(inspire_numbers_impact, file = "06 impact country numbers per year pe
 
 # ===========================================================================
 # Generate visualization data (JSON)
+# Output Fields:
+# code - Country Code
+# name - Country Name
+# z - count
+# Output is grouped by year
 # ===========================================================================
 
 country_impact_lookup <- inspire_cleaned %>% select(country_impact,country_impact_name) %>% unique()

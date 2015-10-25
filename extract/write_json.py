@@ -95,7 +95,7 @@ def transform_data(input_data, iso_map, name_map, delete_set):
         out_row['project_id'] = row['application_id']
         out_row['project_summary'] = row['summary']
         out_row['project_name'] = row['project_name']
-        out_row['sectors'] = ''
+        out_row['sectors'] = row['sector'].replace(', ', ',').split(',')
 
         country_name = row['project_location_2'].strip()
         country_code = get_country_code(country_name, iso_map)

@@ -11,6 +11,10 @@ function initMap(mapDivId) {
 				enabled: false
 			},
 
+			credits: {
+				enabled: false
+			},
+
 			mapNavigation: {
 				enabled: true,
 				buttonOptions: {
@@ -30,8 +34,8 @@ function renderMapData(cTitle, cSubtitle, data) {
 	var mapData = Highcharts.geojson(Highcharts.maps['custom/world']);
 
 	var hcMapOptions = hcMap.options;
-	console.log(hcMapOptions);
-	console.log(cTitle + " - " + cSubtitle);
+//	console.log(hcMapOptions);
+//	console.log(cTitle + " - " + cSubtitle);
 
 	hcMapOptions.title = {text : cTitle};
 	hcMapOptions.subtitle = {text : cSubtitle};
@@ -52,7 +56,7 @@ function renderMapData(cTitle, cSubtitle, data) {
 				minSize: 4,
 				maxSize: '12%',
 				tooltip: {
-					pointFormat: '{point.country}: {point.z}'
+					pointFormat: '{point.code}: {point.z}'
 				}
 			});
 	hcMap = new Highcharts.Map (hcMapOptions);

@@ -37,6 +37,8 @@ def import_iso_changes_from_file(filename):
         for row in reader:
             change_map[(row['Year'], row['ID'])] = (row['Application_Code'], row['Impact_Code'])
 
+    return change_map
+
 
 def import_deletes(filename):
     delete_set = set()
@@ -44,6 +46,8 @@ def import_deletes(filename):
         reader = csv.DictReader(csvfile)
         for row in reader:
             delete_set.add((row['Year'], row['ID']))
+
+    return delete_set
 
 
 def dict_factory(cursor, row):
@@ -73,7 +77,7 @@ def get_country_code(country_name, iso_map):
     return country_code
 
 
-def transform_data(input_data, iso_map, name_map):
+def transform_data(input_data, iso_map, name_map, delete_set):
     output = list()
     for row in input_data:
         out_row = dict()
@@ -96,9 +100,44 @@ def transform_data(input_data, iso_map, name_map):
         out_row['country_impact'] = country_code
         out_row['project_details'] = row['project_details']
         out_row['project_year'] = row['year']
-        output.append(out_row)
+
+        if (out_row['project_year'], out_row['project_id']) not in delete_set:
+            output.append(out_row)
+        else:
+            with open('../data/out.log', 'at') as a:
+                a.write('(Year, ID) = ({}, {}) has been excluded.'.format(out_row['project_year'], out_row['project_id']))
 
     return output
+
+
+def change_data(data, change_mapping, name_map):
+    for row in data:
+        project_tuple = (row['project_year'], row['project_id'])
+        if project_tuple in change_mapping:
+            old_countries_string = get_countries_string(row)
+
+            new_countries = change_mapping[project_tuple]
+            row['country_application'] = new_countries[0]
+            row['country_application_name'] = name_map[new_countries[0]]
+
+            row['country_impact'] = new_countries[1]
+            row['country_impact_name'] = name_map[new_countries[1]]
+
+            new_countries_string = get_countries_string(row)
+
+            with open('../data/out.log', 'at') as a:
+                a.write('(Year, ID) = ({}, {}) has been changed from '
+                        '(Appl Country, Appl Code, Impact Country, Impact Code) = ({}) to ({}).'
+                        .format(old_countries_string, new_countries_string))
+
+
+def get_countries_string(row):
+    return '{}, {}, {}, {}'.format(
+        row['country_application_name'],
+        row['country_application'],
+        row['country_impact_name'],
+        row['country_impact']
+    )
 
 
 def write_data(data, year):
@@ -109,10 +148,13 @@ def write_data(data, year):
 def main():
     iso_map = import_iso_to_name_maps()
     name_map = import_iso_to_name_map_from_file('../data/ISO_mapping.csv')
+    delete_set = import_deletes('../data/delete_records.csv')
+    change_map = import_iso_changes_from_file('../data/change_country_mapping.csv')
     for year in range(2011, 2016):
         raw_data = get_year_data(year)
 
-        transformed_data = transform_data(raw_data, iso_map, name_map)
+        transformed_data = transform_data(raw_data, iso_map, name_map, delete_set)
+        # change_data(transformed_data, change_map)
         write_data(transformed_data, year)
 
 

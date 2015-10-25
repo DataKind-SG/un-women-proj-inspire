@@ -4,13 +4,20 @@ import json
 
 
 def import_iso_map():
-    iso_map = dict()
-    with open('../data/ISO_mapping.csv', 'rt') as csvfile:
+    iso_map = import_map_from_file('../data/ISO_mapping.csv')
+    additional_map = import_map_from_file('../data/additional_countries.csv')
+    iso_map.update(additional_map)
+    return iso_map
+
+
+def import_map_from_file(filename):
+    this_map = dict()
+    with open(filename, 'rt') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            iso_map[row['Name']] = row['Code']
+            this_map[row['Name']] = row['Code']
 
-    return iso_map
+    return this_map
 
 
 def dict_factory(cursor, row):

@@ -105,28 +105,27 @@ def main(argv):
 
 
 def process_other_details_2015(ws_data):
-    ret_value = ''
+    ret_value = [ws_data["result_1"].replace("_x000D_", "\n")]
     for key, value in ws_data.iteritems():
-        if key == 'result_1':
-            ret_value += value
-    return ret_value
+        if key.startswith('success') and len(ws_data[key]) > 1:
+            ret_value.append(ws_data[key][0].replace("_x000D_", "\n"))
+    return ''.join(ret_value)
 
 
 def process_sector_2015(ws_data):
-    ret_value = []
-    if ws_data["result_16"] == 1:
+    if ws_data["result_16"] == '1':
         ret_value.append('Education')
-    if ws_data["result_17"] == 1:
-        ret_value.append('Environment \& Sustainability')
+    if ws_data["result_17"] == '1':
+        ret_value.append('Environment & Sustainability')
 
-    if ws_data["result_18"] == 1:
-        ret_value.append('Science \& Technology')
+    if ws_data["result_18"] == '1':
+        ret_value.append('Science & Technology')
 
-    if ws_data["result_19"] == 1:
+    if ws_data["result_19"] == '1':
         ret_value.append('Health')
 
-    if ws_data["result_20"] == 1:
-        ret_value.append('Entrepreneurship \& Business')
+    if ws_data["result_20"] == '1':
+        ret_value.append('Entrepreneurship & Business')
     other = ws_data["result_21"]
     if other == 1:
         ret_value.append(ws_data["result_22"])
@@ -142,7 +141,11 @@ def process_sheet_2015(sheet2015, conn):
         highest_row = sheet2015.get_highest_row()
         ws_data = {}
         for row in range(2, highest_row + 1):
-            ws_data[sheet2015['A' + str(row)].value] = sheet2015['C' + str(row)].value
+            data_key = sheet2015['A' + str(row)].value
+
+            if data_key.startswith('success'):
+                ws_data[sheet2015['A' + str(row)].value] = [sheet2015['B' + str(row)].value, sheet2015['C' + str(row)].value]
+            ws_data[data_key] = sheet2015['C' + str(row)].value
 
         data_dict = {"year": 2015, "application_id": ws_data["id"], "project_name": ws_data["general_1"],
                      "institution": ws_data["organization_1"], "project_location_1": ws_data["contact_8"],
@@ -182,6 +185,7 @@ if __name__ == '__main__':
     del wb2015_sheet_names[0]
     for sheet_2015 in wb2015_sheet_names:
         process_sheet_2015(wb2015.get_sheet_by_name(sheet_2015), conn)
+
 
 
 

@@ -1,0 +1,98 @@
+---
+title: "Explore"
+author: "Raymond C"
+date: "25/10/2015"
+output: html_document
+---
+
+```{r,warning=FALSE}
+library(dplyr)
+library(tm)
+library(ggplot2)
+library(wordcloud)
+```
+
+```{r}
+raw_dat <- read.csv("Data/Project Inspire 2014.csv")
+
+dat <- 
+  raw_dat %>%
+  select(Project_Name, 
+         Mission.Summary, 
+         Project.Details) %>%
+  distinct()
+```
+
+```{r}
+names(raw_dat)
+unique_dat <- 
+  raw_dat %>%
+  select(Entry.Number.ID,
+         Project_Name, 
+         Mission.Summary, 
+         Project.Details) %>%
+  distinct()
+```
+
+
+```{r}
+en_doc <- VCorpus(VectorSource(dat))
+clean_en_doc <-
+  en_doc %>%
+  tm_map(content_transformer(tolower), lazy=TRUE) %>%
+  tm_map(removeNumbers, lazy=TRUE) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(removeWords, stopwords("english")) %>%
+  tm_map(stemDocument, lazy=TRUE)
+
+dtm <- DocumentTermMatrix(clean_en_doc)
+```
+
+###Frequency Table
+I compute the word frequency table by summing over the documents in the corpus. Only the top ten thousand most frequent words are shown as they cover the vast majority of the words used as we will see.
+```{r}
+freq <-
+  dtm %>%
+  as.matrix() %>%
+  colSums()
+
+tab <- data.frame(
+  word = factor(names(freq)),
+  freq = freq) %>%
+  arrange(desc(freq)) %>%
+  top_n(10000) %>%
+  mutate(rank = row_number(),
+         cum_freq = cumsum(freq),
+         coverage = cum_freq/sum(freq))
+```
+
+###Word Frequencies
+The distribution of words order from most frequent on the left to least frequent on the right. Note the rapid exponential decay of frequences. Note that in total there are `r length(tab$freq)` words.
+```{r}
+p <- ggplot(tab, aes(x=rank, y=freq))
+p <- p + geom_line()
+p <- p + scale_y_log10()
+plot(p)
+```
+
+###Word Coverage
+The coverage metric measures the number of words need to cover all the text in the corpus. 0 is none of the corpus and 1.0 is all of the corpus. The blue lines are at the 50 percent mark while the red lines are the 90 percent mark.
+```{r}
+p <- ggplot(tab, aes(x=rank, y=coverage))
+p <- p + geom_line()
+p <- p + geom_hline(yintercept=0.5, color='blue')
+p <- p + geom_hline(yintercept=0.9, color='red')
+p <- p + geom_vline(xintercept=min(which(
+  tab$coverage > 0.5)), color='blue')
+p <- p + geom_vline(xintercept=min(which(
+  tab$coverage > 0.9)), color='red')
+plot(p)
+```
+
+###Wordcloud
+Word cloud of the top 50 words.
+```{r}
+with(head(tab, 50), 
+     wordcloud(word,freq)
+     )
+```

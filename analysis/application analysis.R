@@ -6,6 +6,8 @@ library(openxlsx)
 
 # ===========================================================================
 # Processing
+# Expected Column Names :project_year, country_application, country_application_name, 
+#                        country_impact, country_impact_name
 # ===========================================================================
 
 # NOTE: json file used is a sample file.

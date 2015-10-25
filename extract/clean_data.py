@@ -113,19 +113,18 @@ def process_other_details_2015(ws_data):
 
 
 def process_sector_2015(ws_data):
-    ret_value = []
-    if ws_data["result_16"] == 1:
+    if ws_data["result_16"] == '1':
         ret_value.append('Education')
-    if ws_data["result_17"] == 1:
+    if ws_data["result_17"] == '1':
         ret_value.append('Environment & Sustainability')
 
-    if ws_data["result_18"] == 1:
+    if ws_data["result_18"] == '1':
         ret_value.append('Science & Technology')
 
-    if ws_data["result_19"] == 1:
+    if ws_data["result_19"] == '1':
         ret_value.append('Health')
 
-    if ws_data["result_20"] == 1:
+    if ws_data["result_20"] == '1':
         ret_value.append('Entrepreneurship & Business')
     other = ws_data["result_21"]
     if other == 1:

@@ -56,7 +56,7 @@ function renderMapData(cTitle, cSubtitle, data) {
 				minSize: 4,
 				maxSize: '12%',
 				tooltip: {
-					pointFormat: '{point.code}: {point.z}'
+					pointFormat: '{point.name}: {point.z}'
 				}
 			});
 	hcMap = new Highcharts.Map (hcMapOptions);

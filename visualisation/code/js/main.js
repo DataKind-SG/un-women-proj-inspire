@@ -1,3 +1,6 @@
+var animate_intervalid;
+var animate_interval_year;
+
 
 $( document ).ready(function() {
 	console.log("Loading....");
@@ -37,4 +40,22 @@ function year_2015() {
 	var yearData = applicationsPerYearPerCountryJSON.year_2015;
 //	console.log(yearData);
 	renderMapData("UN Women : Inspire Project","Year 2015",yearData);
+}
+
+function animate() {
+	if (animate_intervalid) {
+		clearInterval(animate_intervalid);
+	}
+	else {
+		animate_interval_year = 2010;
+		animate_intervalid = setInterval(function() {
+			if (animate_interval_year == 2015 ) {
+				animate_interval_year = 2011;
+			}
+			else {
+				animate_interval_year++;
+			}
+			window['year_' + animate_interval_year]();
+		}, 2000);
+	}
 }

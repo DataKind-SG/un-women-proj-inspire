@@ -30,24 +30,39 @@ def get_year_data(year):
     return data
 
 
-def transform_data(input):
+def get_test_data(year):
+    data = [{'project_year': year, 'title': 'asdf', 'country': 'Singapore'},
+            {'project_year': year, 'title': 'qwer', 'country': 'Malaysia'},
+            {'project_year': year, 'title': 'zxcv', 'country': 'Indonesia'}]
+    return data
+
+
+def transform_data(input, iso_map):
     output = list()
     for row in input:
-        output.append(row)
+        out_row = dict()
+        out_row['project_year'] = row['project_year']
+        out_row['title'] = row['title']
+        out_row['country'] = row['country']
+        out_row['country_code'] = iso_map[row['country']]
+        output.append(out_row)
 
     return output
 
-def 
+
+def write_data(data, year):
+    with open('../data/cleaned_applications_{}.json'.format(year), 'wt') as w:
+        json.dump(data, w)
 
 
 def main():
     iso_map = import_iso_map()
     for year in range(2011, 2015):
-        raw_data = get_year_data(year)
-        transformed_data = transform_data(raw_data)
-        write_data(raw_data)
+        # raw_data = get_year_data(year)
+        raw_data = get_test_data(year)
 
-
+        transformed_data = transform_data(raw_data, iso_map)
+        write_data(transformed_data, year)
 
 
 if __name__ == '__main__':

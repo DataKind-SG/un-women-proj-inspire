@@ -99,7 +99,7 @@ def write_data(data, year):
 def main():
     iso_map = import_iso_map()
     name_map = import_rev_map_from_file('../data/ISO_mapping.csv')
-    for year in range(2011, 2015):
+    for year in range(2011, 2016):
         raw_data = get_year_data(year)
 
         transformed_data = transform_data(raw_data, iso_map, name_map)

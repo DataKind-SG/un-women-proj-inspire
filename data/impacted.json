@@ -1,6 +1,11 @@
 {
   "year_2011": [
     {
+      "code": "",
+      "name": "",
+      "z": 2
+    },
+    {
       "code": "AF",
       "name": "Afghanistan",
       "z": 2
@@ -14,11 +19,6 @@
       "code": "BD",
       "name": "Bangladesh",
       "z": 4
-    },
-    {
-      "code": "LB",
-      "name": "Beirut,Lebanon",
-      "z": 1
     },
     {
       "code": "BE",
@@ -67,12 +67,7 @@
     },
     {
       "code": "CD",
-      "name": "Congo, Democratic Republic of the",
-      "z": 3
-    },
-    {
-      "code": "TL",
-      "name": "East Timor",
+      "name": "Congo, the Democratic Republic of the",
       "z": 3
     },
     {
@@ -117,17 +112,12 @@
     },
     {
       "code": "KE",
-      "name": "Kenia",
-      "z": 1
-    },
-    {
-      "code": "KE",
       "name": "Kenya",
-      "z": 38
+      "z": 39
     },
     {
       "code": "KR",
-      "name": "Korea, South",
+      "name": "Korea, Republic of",
       "z": 9
     },
     {
@@ -137,8 +127,13 @@
     },
     {
       "code": "LA",
-      "name": "Laos",
+      "name": "Lao People's Democratic Republic",
       "z": 3
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "z": 1
     },
     {
       "code": "LS",
@@ -197,13 +192,8 @@
     },
     {
       "code": "PS",
-      "name": "paleastinian",
-      "z": 1
-    },
-    {
-      "code": "PS",
-      "name": "Palestinian Territory",
-      "z": 7
+      "name": "Palestine, State of",
+      "z": 8
     },
     {
       "code": "PG",
@@ -213,7 +203,7 @@
     {
       "code": "PH",
       "name": "Philippines",
-      "z": 16
+      "z": 17
     },
     {
       "code": "RW",
@@ -222,7 +212,7 @@
     },
     {
       "code": "SL",
-      "name": "Sierra Leon",
+      "name": "Sierra Leone",
       "z": 1
     },
     {
@@ -252,7 +242,7 @@
     },
     {
       "code": "TZ",
-      "name": "Tanzania",
+      "name": "Tanzania, United Republic of",
       "z": 14
     },
     {
@@ -261,23 +251,23 @@
       "z": 2
     },
     {
-      "code": "UG",
-      "name": "Uganda",
-      "z": 26
+      "code": "TL",
+      "name": "Timor-Leste",
+      "z": 3
     },
     {
       "code": "UG",
-      "name": "Uganda; Kenya",
-      "z": 1
+      "name": "Uganda",
+      "z": 27
     },
     {
       "code": "US",
       "name": "United States",
-      "z": 4
+      "z": 2
     },
     {
       "code": "VN",
-      "name": "Vietnam",
+      "name": "Viet Nam",
       "z": 2
     },
     {
@@ -295,12 +285,12 @@
     {
       "code": "AF",
       "name": "Afghanistan",
-      "z": 3
+      "z": 4
     },
     {
       "code": "AU",
       "name": "Australia",
-      "z": 2
+      "z": 1
     },
     {
       "code": "BD",
@@ -335,7 +325,7 @@
     {
       "code": "CA",
       "name": "Canada",
-      "z": 4
+      "z": 2
     },
     {
       "code": "CN",
@@ -344,7 +334,7 @@
     },
     {
       "code": "CD",
-      "name": "Congo, The Democratic Republic of The",
+      "name": "Congo, the Democratic Republic of the",
       "z": 4
     },
     {
@@ -355,22 +345,22 @@
     {
       "code": "ET",
       "name": "Ethiopia",
-      "z": 3
+      "z": 4
     },
     {
       "code": "GH",
       "name": "Ghana",
-      "z": 19
+      "z": 22
     },
     {
       "code": "IN",
       "name": "India",
-      "z": 27
+      "z": 30
     },
     {
       "code": "ID",
       "name": "Indonesia",
-      "z": 5
+      "z": 7
     },
     {
       "code": "IR",
@@ -385,7 +375,7 @@
     {
       "code": "IL",
       "name": "Israel",
-      "z": 3
+      "z": 2
     },
     {
       "code": "KE",
@@ -400,7 +390,7 @@
     {
       "code": "KR",
       "name": "Korea, Republic of",
-      "z": 6
+      "z": 1
     },
     {
       "code": "KG",
@@ -445,12 +435,17 @@
     {
       "code": "NP",
       "name": "Nepal",
-      "z": 11
+      "z": 13
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "z": 1
     },
     {
       "code": "NG",
       "name": "Nigeria",
-      "z": 21
+      "z": 23
     },
     {
       "code": "NO",
@@ -464,7 +459,7 @@
     },
     {
       "code": "PS",
-      "name": "Palestinian Territory, Occupied",
+      "name": "Palestine, State of",
       "z": 1
     },
     {
@@ -540,7 +535,7 @@
     {
       "code": "UG",
       "name": "Uganda",
-      "z": 32
+      "z": 33
     },
     {
       "code": "GB",
@@ -548,13 +543,8 @@
       "z": 1
     },
     {
-      "code": "US",
-      "name": "United States",
-      "z": 7
-    },
-    {
       "code": "VN",
-      "name": "Vietnam",
+      "name": "Viet Nam",
       "z": 4
     },
     {
@@ -575,14 +565,14 @@
   ],
   "year_2013": [
     {
+      "code": "",
+      "name": "",
+      "z": 1
+    },
+    {
       "code": "AF",
       "name": "Afghanistan",
       "z": 5
-    },
-    {
-      "code": "AU",
-      "name": "Australia",
-      "z": 2
     },
     {
       "code": "BD",
@@ -591,18 +581,13 @@
     },
     {
       "code": "BO",
-      "name": "Bolivia",
+      "name": "Bolivia, Plurinational State of",
       "z": 1
     },
     {
       "code": "BW",
       "name": "Botswana",
       "z": 2
-    },
-    {
-      "code": "ZW",
-      "name": "Bulawayo Zimbabwe",
-      "z": 1
     },
     {
       "code": "BF",
@@ -615,6 +600,11 @@
       "z": 3
     },
     {
+      "code": "CI",
+      "name": "C<U+00F4>te d'Ivoire",
+      "z": 1
+    },
+    {
       "code": "KH",
       "name": "Cambodia",
       "z": 5
@@ -623,11 +613,6 @@
       "code": "CM",
       "name": "Cameroon",
       "z": 22
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "z": 1
     },
     {
       "code": "TD",
@@ -641,28 +626,18 @@
     },
     {
       "code": "CD",
-      "name": "Congo, Democratic Republic of the (Zaire)",
+      "name": "Congo, the Democratic Republic of the",
       "z": 9
     },
     {
       "code": "EG",
       "name": "Egypt",
-      "z": 6
-    },
-    {
-      "code": "EG",
-      "name": "Environs of Giza area, Egypt",
-      "z": 1
+      "z": 7
     },
     {
       "code": "ET",
       "name": "Ethiopia",
       "z": 5
-    },
-    {
-      "code": "FI",
-      "name": "Finland",
-      "z": 1
     },
     {
       "code": "FR",
@@ -677,7 +652,7 @@
     {
       "code": "GH",
       "name": "Ghana",
-      "z": 13
+      "z": 15
     },
     {
       "code": "IS",
@@ -687,7 +662,7 @@
     {
       "code": "IN",
       "name": "India",
-      "z": 60
+      "z": 62
     },
     {
       "code": "ID",
@@ -702,11 +677,6 @@
     {
       "code": "IL",
       "name": "Israel",
-      "z": 3
-    },
-    {
-      "code": "CI",
-      "name": "Ivory Coast (Cote D`Ivoire)",
       "z": 1
     },
     {
@@ -717,11 +687,11 @@
     {
       "code": "KE",
       "name": "Kenya",
-      "z": 55
+      "z": 59
     },
     {
-      "code": "KE",
-      "name": "KISII, KENYA",
+      "code": "KR",
+      "name": "Korea, Republic of",
       "z": 1
     },
     {
@@ -782,12 +752,7 @@
     {
       "code": "NP",
       "name": "Nepal",
-      "z": 8
-    },
-    {
-      "code": "NL",
-      "name": "Netherlands",
-      "z": 1
+      "z": 9
     },
     {
       "code": "NZ",
@@ -797,12 +762,12 @@
     {
       "code": "NE",
       "name": "Niger",
-      "z": 1
+      "z": 3
     },
     {
       "code": "NG",
       "name": "Nigeria",
-      "z": 32
+      "z": 36
     },
     {
       "code": "NO",
@@ -816,8 +781,13 @@
     },
     {
       "code": "PS",
-      "name": "Palestinian Authority",
-      "z": 11
+      "name": "Palestine, State of",
+      "z": 13
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "z": 1
     },
     {
       "code": "PH",
@@ -830,14 +800,9 @@
       "z": 1
     },
     {
-      "code": "KE",
-      "name": "Rongo, Kenya",
-      "z": 1
-    },
-    {
       "code": "RW",
       "name": "Rwanda",
-      "z": 8
+      "z": 9
     },
     {
       "code": "SN",
@@ -870,11 +835,6 @@
       "z": 22
     },
     {
-      "code": "KR",
-      "name": "South Korea",
-      "z": 1
-    },
-    {
       "code": "ES",
       "name": "Spain",
       "z": 1
@@ -901,7 +861,7 @@
     },
     {
       "code": "TZ",
-      "name": "Tanzania",
+      "name": "Tanzania, United Republic of",
       "z": 25
     },
     {
@@ -911,7 +871,7 @@
     },
     {
       "code": "TL",
-      "name": "Timor-Leste (East Timor)",
+      "name": "Timor-Leste",
       "z": 1
     },
     {
@@ -927,22 +887,17 @@
     {
       "code": "UG",
       "name": "Uganda",
-      "z": 73
+      "z": 74
     },
     {
       "code": "GB",
       "name": "United Kingdom",
-      "z": 2
-    },
-    {
-      "code": "US",
-      "name": "United States",
-      "z": 6
+      "z": 1
     },
     {
       "code": "VN",
-      "name": "Vietnam",
-      "z": 7
+      "name": "Viet Nam",
+      "z": 8
     },
     {
       "code": "YE",
@@ -957,10 +912,15 @@
     {
       "code": "ZW",
       "name": "Zimbabwe",
-      "z": 17
+      "z": 19
     }
   ],
   "year_2014": [
+    {
+      "code": "",
+      "name": "",
+      "z": 10
+    },
     {
       "code": "AF",
       "name": "Afghanistan",
@@ -979,7 +939,7 @@
     {
       "code": "AU",
       "name": "Australia",
-      "z": 8
+      "z": 7
     },
     {
       "code": "BH",
@@ -1002,9 +962,14 @@
       "z": 1
     },
     {
+      "code": "CI",
+      "name": "C<U+00F4>te d'Ivoire",
+      "z": 1
+    },
+    {
       "code": "KH",
       "name": "Cambodia",
-      "z": 12
+      "z": 13
     },
     {
       "code": "CM",
@@ -1023,18 +988,13 @@
     },
     {
       "code": "CD",
-      "name": "Congo, Democratic Republic of the (Zaire)",
+      "name": "Congo, the Democratic Republic of the",
       "z": 1
     },
     {
       "code": "CR",
       "name": "Costa Rica",
       "z": 1
-    },
-    {
-      "code": "IN",
-      "name": "Delhi",
-      "z": 4
     },
     {
       "code": "EG",
@@ -1054,7 +1014,7 @@
     {
       "code": "GH",
       "name": "Ghana",
-      "z": 10
+      "z": 11
     },
     {
       "code": "GN",
@@ -1064,7 +1024,7 @@
     {
       "code": "IN",
       "name": "India",
-      "z": 34
+      "z": 43
     },
     {
       "code": "ID",
@@ -1073,23 +1033,13 @@
     },
     {
       "code": "IR",
-      "name": "Iran",
+      "name": "Iran, Islamic Republic of",
       "z": 2
     },
     {
       "code": "IL",
       "name": "Israel",
-      "z": 8
-    },
-    {
-      "code": "IT",
-      "name": "Italy",
-      "z": 1
-    },
-    {
-      "code": "CI",
-      "name": "Ivory Coast (Cote D`Ivoire)",
-      "z": 1
+      "z": 2
     },
     {
       "code": "JO",
@@ -1104,12 +1054,12 @@
     {
       "code": "KE",
       "name": "Kenya",
-      "z": 32
+      "z": 34
     },
     {
-      "code": "MY",
-      "name": "Kuala Lumpur",
-      "z": 1
+      "code": "KR",
+      "name": "Korea, Republic of",
+      "z": 4
     },
     {
       "code": "KG",
@@ -1139,17 +1089,7 @@
     {
       "code": "MY",
       "name": "Malaysia",
-      "z": 8
-    },
-    {
-      "code": "US",
-      "name": "Massachusetts",
-      "z": 1
-    },
-    {
-      "code": "PH",
-      "name": "Metro Manila",
-      "z": 1
+      "z": 9
     },
     {
       "code": "MA",
@@ -1157,23 +1097,13 @@
       "z": 8
     },
     {
-      "code": "KE",
-      "name": "Nairobi",
-      "z": 1
-    },
-    {
       "code": "NP",
       "name": "Nepal",
-      "z": 11
+      "z": 12
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "z": 1
-    },
-    {
-      "code": "AU",
-      "name": "New South Wales",
       "z": 2
     },
     {
@@ -1182,14 +1112,14 @@
       "z": 4
     },
     {
-      "code": "NG",
-      "name": "Nigeria",
-      "z": 40
+      "code": "NE",
+      "name": "Niger",
+      "z": 1
     },
     {
-      "code": "NL",
-      "name": "Noord Holland",
-      "z": 1
+      "code": "NG",
+      "name": "Nigeria",
+      "z": 36
     },
     {
       "code": "PK",
@@ -1198,28 +1128,18 @@
     },
     {
       "code": "PS",
-      "name": "Palestine",
-      "z": 4
+      "name": "Palestine, State of",
+      "z": 10
     },
     {
       "code": "PG",
       "name": "Papua New Guinea",
-      "z": 1
+      "z": 3
     },
     {
       "code": "PH",
       "name": "Philippines",
-      "z": 8
-    },
-    {
-      "code": "IN",
-      "name": "Punjab",
-      "z": 2
-    },
-    {
-      "code": "AU",
-      "name": "Queensland",
-      "z": 1
+      "z": 9
     },
     {
       "code": "RO",
@@ -1229,12 +1149,12 @@
     {
       "code": "RW",
       "name": "Rwanda",
-      "z": 8
+      "z": 11
     },
     {
       "code": "SN",
       "name": "Senegal",
-      "z": 1
+      "z": 2
     },
     {
       "code": "SL",
@@ -1257,11 +1177,6 @@
       "z": 12
     },
     {
-      "code": "KR",
-      "name": "South Korea",
-      "z": 4
-    },
-    {
       "code": "LK",
       "name": "Sri Lanka",
       "z": 1
@@ -1273,7 +1188,7 @@
     },
     {
       "code": "SY",
-      "name": "Syria",
+      "name": "Syrian Arab Republic",
       "z": 1
     },
     {
@@ -1283,7 +1198,7 @@
     },
     {
       "code": "TZ",
-      "name": "Tanzania",
+      "name": "Tanzania, United Republic of",
       "z": 8
     },
     {
@@ -1304,7 +1219,7 @@
     {
       "code": "UG",
       "name": "Uganda",
-      "z": 31
+      "z": 32
     },
     {
       "code": "UA",
@@ -1319,16 +1234,11 @@
     {
       "code": "US",
       "name": "United States",
-      "z": 19
-    },
-    {
-      "code": "IN",
-      "name": "Uttar Pradesh",
-      "z": 2
+      "z": 3
     },
     {
       "code": "VN",
-      "name": "Vietnam",
+      "name": "Viet Nam",
       "z": 4
     },
     {
@@ -1349,6 +1259,11 @@
   ],
   "year_2015": [
     {
+      "code": "",
+      "name": "",
+      "z": 8
+    },
+    {
       "code": "AF",
       "name": "Afghanistan",
       "z": 2
@@ -1356,7 +1271,7 @@
     {
       "code": "AU",
       "name": "Australia",
-      "z": 6
+      "z": 3
     },
     {
       "code": "AT",
@@ -1394,14 +1309,14 @@
       "z": 2
     },
     {
+      "code": "KH",
+      "name": "Cambodia",
+      "z": 1
+    },
+    {
       "code": "CM",
       "name": "Cameroon",
       "z": 10
-    },
-    {
-      "code": "CA",
-      "name": "Canada",
-      "z": 1
     },
     {
       "code": "CN",
@@ -1415,7 +1330,7 @@
     },
     {
       "code": "CD",
-      "name": "Congo, Democratic Republic of the (Zaire)",
+      "name": "Congo, the Democratic Republic of the",
       "z": 2
     },
     {
@@ -1446,7 +1361,7 @@
     {
       "code": "IN",
       "name": "India",
-      "z": 33
+      "z": 34
     },
     {
       "code": "ID",
@@ -1465,7 +1380,7 @@
     },
     {
       "code": "LA",
-      "name": "Laos",
+      "name": "Lao People's Democratic Republic",
       "z": 1
     },
     {
@@ -1476,7 +1391,7 @@
     {
       "code": "MG",
       "name": "Madagascar",
-      "z": 3
+      "z": 4
     },
     {
       "code": "MW",
@@ -1521,7 +1436,7 @@
     {
       "code": "NL",
       "name": "Netherlands",
-      "z": 2
+      "z": 1
     },
     {
       "code": "NG",
@@ -1531,7 +1446,7 @@
     {
       "code": "PK",
       "name": "Pakistan",
-      "z": 14
+      "z": 15
     },
     {
       "code": "PH",
@@ -1554,6 +1469,11 @@
       "z": 4
     },
     {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "z": 1
+    },
+    {
       "code": "SO",
       "name": "Somalia",
       "z": 3
@@ -1561,7 +1481,7 @@
     {
       "code": "ZA",
       "name": "South Africa",
-      "z": 8
+      "z": 7
     },
     {
       "code": "LK",
@@ -1580,7 +1500,7 @@
     },
     {
       "code": "TZ",
-      "name": "Tanzania",
+      "name": "Tanzania, United Republic of",
       "z": 8
     },
     {
@@ -1604,14 +1524,9 @@
       "z": 2
     },
     {
-      "code": "US",
-      "name": "United States",
-      "z": 8
-    },
-    {
       "code": "VN",
-      "name": "Vietnam",
-      "z": 5
+      "name": "Viet Nam",
+      "z": 6
     },
     {
       "code": "ZM",

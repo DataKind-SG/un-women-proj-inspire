@@ -12,23 +12,40 @@ Changes in 2011, format = (Appl Country, Appl Code, Impact Country, Impact Code)
 
 Changes in 2012, format = (Appl Country, Appl Code, Impact Country, Impact Code)
 *************************************************************************************
+(Year, ID) = ('2012', '84') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Ethiopia, ET).
+(Year, ID) = ('2012', '106') has been changed from: (Korea, Republic of, KR, Korea, Republic of, KR) to: (Korea, Republic of, KR, Nepal, NP).
 (Year, ID) = ('2012', '110') has been changed from: (United States, US, United States, US) to: (United States, US, Nigeria, NG).
 (Year, ID) = ('2012', '159') has been changed from: (United States, US, United States, US) to: (United States, US, India, IN).
 (Year, ID) = ('2012', '192') has been changed from: (United States, US, United States, US) to: (United States, US, Afghanistan, AF).
+(Year, ID) = ('2012', '197') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Uganda, UG).
 (Year, ID) = ('2012', '202') has been changed from: (United States, US, United States, US) to: (United States, US, India, IN).
 (Year, ID) = ('2012', '231') has been changed from: (United States, US, United States, US) to: (United States, US, Nigeria, NG).
 (Year, ID) = ('2012', '269') has been changed from: (United States, US, United States, US) to: (United States, US, Ghana, GH).
+(Year, ID) = ('2012', '275') has been changed from: (Korea, Republic of, KR, Korea, Republic of, KR) to: (Korea, Republic of, KR, Indonesia, ID).
+(Year, ID) = ('2012', '281') has been changed from: (Korea, Republic of, KR, Korea, Republic of, KR) to: (Korea, Republic of, KR, Indonesia, ID).
+(Year, ID) = ('2012', '311') has been changed from: (Canada, CA, Canada, CA) to: (Canada, CA, India, IN).
+(Year, ID) = ('2012', '312') has been changed from: (Korea, Republic of, KR, Korea, Republic of, KR) to: (Korea, Republic of, KR, Ghana, GH).
+(Year, ID) = ('2012', '315') has been changed from: (Korea, Republic of, KR, Korea, Republic of, KR) to: (Korea, Republic of, KR, Ghana, GH).
+(Year, ID) = ('2012', '337') has been changed from: (Canada, CA, Canada, CA) to: (Canada, CA, Niger, NE).
 (Year, ID) = ('2012', '345') has been changed from: (United States, US, United States, US) to: (United States, US, Nepal, NP).
 
 
 Changes in 2013, format = (Appl Country, Appl Code, Impact Country, Impact Code)
 *************************************************************************************
+(Year, ID) = ('2013', '521') has been changed from: (Canada, CA, Canada, CA) to: (Canada, CA, Ghana, GH).
 (Year, ID) = ('2013', '511') has been changed from: (United States, US, United States, US) to: (United States, US, India, IN).
+(Year, ID) = ('2013', '485') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Kenya, KE).
 (Year, ID) = ('2013', '482') has been changed from: (United States, US, United States, US) to: (United States, US, Kenya, KE).
 (Year, ID) = ('2013', '476') has been changed from: (United States, US, United States, US) to: (United States, US, Viet Nam, VN).
+(Year, ID) = ('2013', '474') has been changed from: (Netherlands, NL, Netherlands, NL) to: (Netherlands, NL, Niger, NE).
+(Year, ID) = ('2013', '412') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Niger, NE).
 (Year, ID) = ('2013', '403') has been changed from: (United States, US, United States, US) to: (United States, US, Rwanda, RW).
+(Year, ID) = ('2013', '397') has been changed from: (United Kingdom, GB, United Kingdom, GB) to: (, UK, , ).
 (Year, ID) = ('2013', '349') has been changed from: (United States, US, United States, US) to: (United States, US, Papua New Guinea, PG).
 (Year, ID) = ('2013', '264') has been changed from: (United States, US, United States, US) to: (United States, US, Nepal, NP).
+(Year, ID) = ('2013', '109') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2013', '58') has been changed from: (Finland, FI, Finland, FI) to: (Finland, FI, Nigeria, NG).
+(Year, ID) = ('2013', '53') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
 
 
 Changes in 2014, format = (Appl Country, Appl Code, Impact Country, Impact Code)
@@ -37,28 +54,45 @@ Changes in 2014, format = (Appl Country, Appl Code, Impact Country, Impact Code)
 (Year, ID) = ('2014', '168') has been changed from: (United States, US, United States, US) to: (United States, US, Rwanda, RW).
 (Year, ID) = ('2014', '167') has been changed from: (United States, US, United States, US) to: (United States, US, Rwanda, RW).
 (Year, ID) = ('2014', '166') has been changed from: (United States, US, United States, US) to: (United States, US, Rwanda, RW).
+(Year, ID) = ('2014', '294') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Niger, NE).
 (Year, ID) = ('2014', '429') has been changed from: (United States, US, United States, US) to: (United States, US, Ghana, GH).
 (Year, ID) = ('2014', '485') has been changed from: (United States, US, United States, US) to: (United States, US, Kenya, KE).
 (Year, ID) = ('2014', '468') has been changed from: (United States, US, United States, US) to: (United States, US, Nepal, NP).
 (Year, ID) = ('2014', '444') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '416') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '392') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
+(Year, ID) = ('2014', '391') has been changed from: (Italy, IT, Italy, IT) to: (Italy, IT, Senegal, SN).
 (Year, ID) = ('2014', '293') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '292') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '281') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '251') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '249') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2014', '248') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
+(Year, ID) = ('2014', '233') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Cambodia, KH).
+(Year, ID) = ('2014', '197') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Papua New Guinea, PG).
+(Year, ID) = ('2014', '196') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Papua New Guinea, PG).
 (Year, ID) = ('2014', '169') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
+(Year, ID) = ('2014', '152') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2014', '110') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2014', '92') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2014', '73') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2014', '50') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
+(Year, ID) = ('2014', '48') has been changed from: (Israel, IL, Israel, IL) to: (Israel, IL, Palestine, State of, PS).
 
 
 Changes in 2015, format = (Appl Country, Appl Code, Impact Country, Impact Code)
 *************************************************************************************
+(Year, ID) = ('2015', '376') has been changed from: (Netherlands, NL, Netherlands, NL) to: (Netherlands, NL, Pakistan, PK).
+(Year, ID) = ('2015', '366') has been changed from: (South Africa, ZA, South Africa, ZA) to: (Australia, AU, Madagascar, MG).
 (Year, ID) = ('2015', '361') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2015', '359') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2015', '333') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
+(Year, ID) = ('2015', '310') has been changed from: (Canada, CA, Canada, CA) to: (Canada, CA, Viet Nam, VN).
 (Year, ID) = ('2015', '301') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2015', '296') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2015', '275') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
+(Year, ID) = ('2015', '271') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, India, IN).
+(Year, ID) = ('2015', '243') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Solomon Islands, SB).
+(Year, ID) = ('2015', '222') has been changed from: (Australia, AU, Australia, AU) to: (Australia, AU, Cambodia, KH).
 (Year, ID) = ('2015', '119') has been changed from: (United States, US, United States, US) to: (United States, US, , ).
 (Year, ID) = ('2015', '67') has been changed from: (United States, US, United States, US) to: (United States, US, , ).

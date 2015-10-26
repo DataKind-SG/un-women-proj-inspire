@@ -15,7 +15,7 @@ Pre-requisites
 --------------
 This code has been tested on the following:
 
-- R version 3.1.3
+- R version 3.1.3, 3.2.2
 
 Required packages:
 - dplyr
@@ -27,11 +27,11 @@ Required files:
 
 Execution
 ---------
-In RStudio, you can open the file and run the entire file by clicking on "Source" button
+In RStudio, you can open the file, setwd() to the directory where the analysis directory is and run the entire file by clicking on "Source" button
 
 Expected Output
 ---------------
-In the same directory, the following files will be created:
+In the /data directory, the following files will be created:
 - 01 application country names per year.xlsx
 - 02 impact country names per year.xlsx
 - 03 application country numbers per year.xlsx
@@ -41,6 +41,3 @@ In the same directory, the following files will be created:
 - impacted.json
 
 Note: "impacted.json" file is intended for visualization purposes.
-
-These files can be referenced from the /data directory of this repository.
-

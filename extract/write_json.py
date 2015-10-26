@@ -114,7 +114,7 @@ def transform_data(input_data, iso_map, name_map, delete_set):
         if (out_row['project_year'], out_row['project_id']) not in delete_set:
             output.append(out_row)
         else:
-            with open('../data/out.log', 'at') as a:
+            with open('../data/exclusion_log', 'at') as a:
                 a.write('(Year, ID) = ({}, {}) has been excluded.\n'
                         .format(out_row['project_year'], out_row['project_id']))
 
@@ -122,8 +122,7 @@ def transform_data(input_data, iso_map, name_map, delete_set):
 
 
 def change_data(data, change_mapping, name_map):
-    with open('../data/out.log', 'at') as a:
-        a.write('\n\n(Appl Country, Appl Code, Impact Country, Impact Code)\n')
+    wrote_header = False
 
     for row in data:
         project_tuple = (row['project_year'], row['project_id'])
@@ -139,7 +138,12 @@ def change_data(data, change_mapping, name_map):
 
             new_countries_string = get_countries_string(row)
 
-            with open('../data/out.log', 'at') as a:
+            with open('../data/change_log', 'at') as a:
+                if not wrote_header:
+                    a.write('\n\nChanges in {}, format = (Appl Country, Appl Code, Impact Country, Impact Code)\n'
+                            .format(row['project_year']))
+                    a.write('*************************************************************************************\n')
+                    wrote_header = True
                 a.write('(Year, ID) = {} has been changed from: ({}) to: ({}).\n'
                         .format(str(project_tuple), old_countries_string, new_countries_string))
 

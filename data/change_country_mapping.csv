@@ -25,7 +25,7 @@ Year,ID,Application_Code,Impact_Code,Comments
 2014,429,US,GH,
 2014,485,US,KE,
 2014,468,US,NP,
-2014,444,US,AF,
+2014,444,US,KE,
 2014,416,US,KH,
 2014,392,US,NG,
 2014,293,US,JO,Duplicate of 292
@@ -39,7 +39,7 @@ Year,ID,Application_Code,Impact_Code,Comments
 2015,359,US,MM,
 2015,333,US,FJ,
 2015,301,US,UG,
-2015,296,US,AF,
+2015,296,US,KE,
 2015,275,US,IN,
 2015,119,US,,Delete this as impact is in US
 2015,67,US,NG,

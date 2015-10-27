@@ -32,14 +32,16 @@ inspire_cleaned$project_year <- factor(inspire_cleaned$project_year)
 inspire_country_names_applied <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     select(country_application_name) %>%
-    unique()
+    unique() %>%
+    arrange(country_application_name)
 write.xlsx(inspire_country_names_applied, file = "../data/01 application country names per year.xlsx")
 
 # Name of all countries that were impacted per year, 2011 - 2015
 inspire_country_names_impacted <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     select(country_impact_name) %>%
-    unique()
+    unique() %>%
+    arrange(country_impact_name)
 write.xlsx(inspire_country_names_impacted, file = "../data/02 impact country names per year.xlsx")
 
 # Number of countries that applied per year, 2011 - 2015

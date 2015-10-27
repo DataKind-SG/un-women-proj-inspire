@@ -595,11 +595,6 @@
       "z": 3
     },
     {
-      "code": "CI",
-      "name": "C<U+00F4>te d'Ivoire",
-      "z": 1
-    },
-    {
       "code": "KH",
       "name": "Cambodia",
       "z": 5
@@ -623,6 +618,11 @@
       "code": "CD",
       "name": "Congo, the Democratic Republic of the",
       "z": 9
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
+      "z": 1
     },
     {
       "code": "EG",
@@ -937,11 +937,6 @@
       "z": 1
     },
     {
-      "code": "CI",
-      "name": "C<U+00F4>te d'Ivoire",
-      "z": 1
-    },
-    {
       "code": "KH",
       "name": "Cambodia",
       "z": 14
@@ -969,6 +964,11 @@
     {
       "code": "CR",
       "name": "Costa Rica",
+      "z": 1
+    },
+    {
+      "code": "CI",
+      "name": "Côte d'Ivoire",
       "z": 1
     },
     {

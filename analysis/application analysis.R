@@ -10,11 +10,11 @@ library(openxlsx)
 #                        country_impact, country_impact_name
 # ===========================================================================
 
-inspire2011 <- fromJSON("cleaned_applications_2011.json")
-inspire2012 <- fromJSON("cleaned_applications_2012.json")
-inspire2013 <- fromJSON("cleaned_applications_2013.json")
-inspire2014 <- fromJSON("cleaned_applications_2014.json")
-inspire2015 <- fromJSON("cleaned_applications_2015.json")
+inspire2011 <- fromJSON("../data/cleaned_applications_2011.json")
+inspire2012 <- fromJSON("../data/cleaned_applications_2012.json")
+inspire2013 <- fromJSON("../data/cleaned_applications_2013.json")
+inspire2014 <- fromJSON("../data/cleaned_applications_2014.json")
+inspire2015 <- fromJSON("../data/cleaned_applications_2015.json")
 
 inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
 
@@ -32,40 +32,42 @@ inspire_cleaned$project_year <- factor(inspire_cleaned$project_year)
 inspire_country_names_applied <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     select(country_application_name) %>%
-    unique()
-write.xlsx(inspire_country_names_applied, file = "01 application country names per year.xlsx")
+    unique() %>%
+    arrange(country_application_name)
+write.xlsx(inspire_country_names_applied, file = "../data/01 application country names per year.xlsx")
 
 # Name of all countries that were impacted per year, 2011 - 2015
 inspire_country_names_impacted <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     select(country_impact_name) %>%
-    unique()
-write.xlsx(inspire_country_names_impacted, file = "02 impact country names per year.xlsx")
+    unique() %>%
+    arrange(country_impact_name)
+write.xlsx(inspire_country_names_impacted, file = "../data/02 impact country names per year.xlsx")
 
 # Number of countries that applied per year, 2011 - 2015
 inspire_countries_applied <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     summarise(count=length(country_application_name))
-write.xlsx(inspire_countries_applied, file = "03 application country numbers per year.xlsx")
+write.xlsx(inspire_countries_applied, file = "../data/03 application country numbers per year.xlsx")
 
 # Number of countries that were impacted per year, 2011 - 2015
 inspire_countries_impact <- inspire_cleaned %>% 
     group_by(project_year) %>% 
     summarise(count=length(country_impact_name))
-write.xlsx(inspire_countries_impact, file = "04 impact country numbers per year.xlsx")
+write.xlsx(inspire_countries_impact, file = "../data/04 impact country numbers per year.xlsx")
 
 
 #Application numbers per year for each country, 2011 - 2015
 inspire_numbers_applied <- inspire_cleaned %>% 
     group_by(project_year, country_application_name) %>% 
     summarise(count=length(country_application_name))
-write.xlsx(inspire_numbers_applied, file = "05 application country numbers per year per country.xlsx")
+write.xlsx(inspire_numbers_applied, file = "../data/05 application country numbers per year per country.xlsx")
 
 #Impact numbers per year for each country, 2011 - 2015
 inspire_numbers_impact <- inspire_cleaned %>% 
     group_by(project_year, country_impact_name) %>% 
     summarise(count=length(country_impact_name))
-write.xlsx(inspire_numbers_impact, file = "06 impact country numbers per year per country.xlsx")
+write.xlsx(inspire_numbers_impact, file = "../data/06 impact country numbers per year per country.xlsx")
 
 # ===========================================================================
 # Generate visualization data (JSON)
@@ -99,4 +101,4 @@ output <- list(
     year_2015 = impacted2015
 )
 
-write(toJSON(output, pretty = TRUE), "impacted.json")
+write(toJSON(output, pretty = TRUE), "../data/impacted.json")

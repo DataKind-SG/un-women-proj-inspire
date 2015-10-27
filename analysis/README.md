@@ -23,11 +23,17 @@ Required packages:
 - openxlsx
 
 Required files:
-- cleaned files for each year in json format in the same directory
+- cleaned files for each year in json format in the "data" directory
 
 Execution
 ---------
 In RStudio, you can open the file, setwd() to the directory where the analysis directory is and run the entire file by clicking on "Source" button
+
+Alternatively, in command line, navigate to the "analysis" directory and execute the following command:
+
+```
+Rscript "application analysis.R"
+```
 
 Expected Output
 ---------------

@@ -1,6 +1,5 @@
 import sqlite3
 import csv
-import json
 
 
 def import_iso_to_name_maps():
@@ -35,17 +34,18 @@ def import_iso_changes_from_file(filename):
     with open(filename, 'rt') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            change_map[(row['Year'], row['ID'])] = (row['Application_Code'], row['Impact_Code'])
+            change_map[(row['Year'], row['ID'])] = (row['Application_Code'], row['Impact_Code'],
+                                                    row['Comments'])
 
     return change_map
 
 
 def import_deletes(filename):
-    delete_set = set()
+    delete_set = dict()
     with open(filename, 'rt') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            delete_set.add((row['Year'], row['ID']))
+            delete_set[(row['Year'], row['ID'])] = row['Comment']
 
     return delete_set
 
@@ -86,8 +86,7 @@ def get_country_name(country_code, name_map):
     return country_name
 
 
-
-def transform_data(input_data, iso_map, name_map, delete_set):
+def transform_data(input_data, iso_map, name_map):
     output = list()
     for row in input_data:
         out_row = dict()
@@ -104,75 +103,74 @@ def transform_data(input_data, iso_map, name_map, delete_set):
         else:
             clean_country_name = country_name
 
-        out_row['country_application_name'] = clean_country_name
-        out_row['country_impact_name'] = clean_country_name
-        out_row['country_application'] = country_code
-        out_row['country_impact'] = country_code
+        out_row['orig_country_application_name'] = clean_country_name
+        out_row['orig_country_impact_name'] = clean_country_name
+        out_row['orig_country_application'] = country_code
+        out_row['orig_country_impact'] = country_code
         out_row['project_details'] = row['project_details']
         out_row['project_year'] = row['year']
 
-        if (out_row['project_year'], out_row['project_id']) not in delete_set:
-            output.append(out_row)
-        else:
-            with open('../data/exclusion_log', 'at') as a:
-                a.write('(Year, ID) = ({}, {}) has been excluded.\n'
-                        .format(out_row['project_year'], out_row['project_id']))
+        out_row['project_location_2'] = row['project_location_2']
+        out_row['institution'] = row['institution']
+        out_row['project_location_1'] = row['project_location_1']
+
+        output.append(out_row)
 
     return output
 
 
-def change_data(data, change_mapping, name_map):
-    wrote_header = False
+def change_row(row, name_map, change_map, delete_map):
+    project_tuple = (row['project_year'], row['project_id'])
+    if project_tuple in change_map:
+        new_countries = change_map[project_tuple]
+        row['country_application'] = new_countries[0]
+        row['country_application_name'] = get_country_name(new_countries[0], name_map)
+        row['country_impact'] = new_countries[1]
+        row['country_impact_name'] = get_country_name(new_countries[1], name_map)
+        row['change_comment'] = new_countries[2]
+    else:
+        row['country_application_name'] = row['orig_country_application_name']
+        row['country_impact_name'] = row['orig_country_impact_name']
+        row['country_application'] = row['orig_country_application']
+        row['country_impact'] = row['orig_country_impact']
+        row['change_comment'] = ''
 
-    for row in data:
-        project_tuple = (row['project_year'], row['project_id'])
-        if project_tuple in change_mapping:
-            old_countries_string = get_countries_string(row)
+    if project_tuple in delete_map:
+        row['is_deleted'] = '1'
+        row['delete_comment'] = delete_map[project_tuple]
+    else:
+        row['is_deleted'] = '0'
+        row['delete_comment'] = ''
 
-            new_countries = change_mapping[project_tuple]
-            row['country_application'] = new_countries[0]
-            row['country_application_name'] = get_country_name(new_countries[0], name_map)
-
-            row['country_impact'] = new_countries[1]
-            row['country_impact_name'] = get_country_name(new_countries[1], name_map)
-
-            new_countries_string = get_countries_string(row)
-
-            with open('../data/change_log', 'at') as a:
-                if not wrote_header:
-                    a.write('\n\nChanges in {}, format = (Appl Country, Appl Code, Impact Country, Impact Code)\n'
-                            .format(row['project_year']))
-                    a.write('*************************************************************************************\n')
-                    wrote_header = True
-                a.write('(Year, ID) = {} has been changed from: ({}) to: ({}).\n'
-                        .format(str(project_tuple), old_countries_string, new_countries_string))
-
-
-def get_countries_string(row):
-    return '{}, {}, {}, {}'.format(
-        row['country_application_name'],
-        row['country_application'],
-        row['country_impact_name'],
-        row['country_impact']
-    )
+    return row
 
 
-def write_data(data, year):
-    with open('../data/cleaned_applications_{}.json'.format(year), 'wt') as w:
-        json.dump(data, w)
+def write_data(data, year, name_map, change_map, delete_map):
+    fieldnames = ['project_year', 'project_id', 'country_application', 'country_application_name',
+                  'country_impact', 'country_impact_name',
+                  'orig_country_application', 'orig_country_application_name',
+                  'orig_country_impact', 'orig_country_impact_name', 'change_comment',
+                  'project_name', 'institution', 'project_location_1', 'project_location_2',
+                  'is_deleted', 'delete_comment',
+                  'sectors', 'project_summary', 'project_details', 'project_details_other',]
+
+    with open('../data/cleaned_applications_{}.csv'.format(year), 'wt') as csvfile:
+        w = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        w.writeheader()
+        for row in data:
+            changed_row = change_row(row, name_map, change_map, delete_map)
+            w.writerow(changed_row)
 
 
 def main():
     iso_map = import_iso_to_name_maps()
     name_map = import_iso_to_name_map_from_file('../data/ISO_mapping.csv')
-    delete_set = import_deletes('../data/delete_records.csv')
+    delete_map = import_deletes('../data/delete_records.csv')
     change_map = import_iso_changes_from_file('../data/change_country_mapping.csv')
     for year in range(2011, 2016):
         raw_data = get_year_data(year)
-
-        transformed_data = transform_data(raw_data, iso_map, name_map, delete_set)
-        change_data(transformed_data, change_map, name_map)
-        write_data(transformed_data, year)
+        transformed_data = transform_data(raw_data, iso_map, name_map)
+        write_data(transformed_data, year, name_map, change_map, delete_map)
 
 
 if __name__ == '__main__':

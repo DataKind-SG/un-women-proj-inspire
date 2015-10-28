@@ -1,0 +1,581 @@
+project_year,project_id,country_application,country_application_name,country_impact,country_impact_name,orig_country_application,orig_country_application_name,orig_country_impact,orig_country_impact_name,change_comment,project_name,institution,project_location_1,project_location_2,is_deleted,delete_comment,sectors,project_summary,project_details,project_details_other
+2011,452,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,451,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania ,0,,[''],,,
+2011,450,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,449,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,448,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"University of Nigeria, Nsukka 
+",,Nigeria ,0,,[''],,,
+2011,447,US,United States,,,US,United States,US,United States,Really cannot tell,,,,United States ,0,,[''],,,
+2011,446,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,The University of Zambia ,,Zambia ,0,,[''],,,
+2011,445,MU,Mauritius,MU,Mauritius,MU,Mauritius,MU,Mauritius,,,,,Mauritius,0,,[''],,,
+2011,444,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa ,0,,[''],,,
+2011,443,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,442,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,441,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,440,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,439,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania  ,0,,[''],,,
+2011,438,CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",,,,,"Congo, Democratic Republic of the ",0,,[''],,,
+2011,437,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,436,VN,Viet Nam,VN,Viet Nam,VN,Viet Nam,VN,Viet Nam,,,"RMIT International University 
+Hong Bang University 
+RMIT International University ",,Vietnam ,0,,[''],,,
+2011,435,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,434,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,433,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal ,0,,[''],,,
+2011,432,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National University of Rwanda 
+National University of Rwanda ",,Rwanda ,0,,[''],,,
+2011,431,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,430,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"University of Nigeria, Nsukka ",,Nigeria ,0,,[''],,,
+2011,429,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,428,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,University Of Nigeria Nsukka ,,Nigeria ,0,,[''],,,
+2011,427,US,United States,PG,Papua New Guinea,PG,Papua New Guinea,PG,Papua New Guinea,,,"Georgetown University 
+Naval Postgraduate School ",,Papua New Guinea ,0,,[''],,,
+2011,426,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal ,0,,[''],,,
+2011,425,LS,Lesotho,LS,Lesotho,LS,Lesotho,LS,Lesotho,,,,,Lesotho ,0,,[''],,,
+2011,424,US,United States,KE,Kenya,KE,Kenya,KE,Kenya,,,"Harvard College '99 
+United States International University 
+Matriculating this year to JKUAT ",,Kenya ,0,,[''],,,
+2011,423,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,422,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University of Cape Coast Ghana 
+Presbyterian University ",,Ghana,0,,[''],,,
+2011,421,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,420,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National University of Rwanda 
+National University of Rwanda 
+NATIONAL UNIVERSITY OF RWANDA ",,Rwanda ,0,,[''],,,
+2011,419,MU,Mauritius,MU,Mauritius,MU,Mauritius,MU,Mauritius,,,University of Mauritius,,Mauritius ,0,,[''],,,
+2011,418,IL,Israel,IL,Israel,IL,Israel,IL,Israel,,,,,Israel ,0,,[''],,,
+2011,417,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,416,EG,Egypt,EG,Egypt,EG,Egypt,EG,Egypt,,,,,Egypt ,0,,[''],,,
+2011,415,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,"University of Zambia 
+",,Zambia ,0,,[''],,,
+2011,414,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,,,Ethiopia ,0,,[''],,,
+2011,413,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,412,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,411,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,410,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Caritars University Enugu Nigeria 
+University of Nigeria Nsukka Enugu, Enugu campus ",,Nigeria ,0,,[''],,,
+2011,409,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,"University of Douala 
+University of Dschang 
+",,Cameroon ,0,,[''],,,
+2011,408,SG,Singapore,PH,Philippines,PH,Philippines,PH,Philippines,,,National University of Singapore ,,Philippines,0,,[''],,,
+2011,407,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,406,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,405,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,404,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,403,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,"Strathmore University 
+Strathmore University 
+Strathmore University",,Kenya ,0,,[''],,,
+2011,402,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,401,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,400,US,United States,LK,Sri Lanka,US,United States,US,United States,,,"University of Oxford 
+",,United States,0,,[''],,,
+2011,399,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,398,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa,0,,[''],,,
+2011,397,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,"KCA UNIVERSITY 
+",,Kenya ,0,,[''],,,
+2011,396,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University of Education, Winneba 
+Kumasi Polyechnic ",,Ghana ,0,,[''],,,
+2011,395,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal ,0,,[''],,,
+2011,394,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"Kumasi Polytechnic 
+
+",,Ghana ,0,,[''],,,
+2011,393,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,National University of Science and Technology ,,Pakistan ,0,,[''],,,
+2011,392,PH,Philippines,PH,Philippines,,,,,,,Philippines ,,,0,,[''],,,
+2011,391,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University for Development Studies 
+",,Ghana ,0,,[''],,,
+2011,390,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,389,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Federal University of Technology, Minna, Niger State, Nigeria ",,Nigeria ,0,,[''],,,
+2011,388,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"Kwame Nkrumah University of Science and Technology, KNUST. ",,Ghana ,0,,[''],,,
+2011,387,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,386,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,385,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore ,0,,[''],,,
+2011,384,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,Birzeit University ,,Palestinian Territory,0,,[''],,,
+2011,383,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,382,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,,,Zambia ,0,,[''],,,
+2011,381,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,UNIVERSITY OF GHANA ,,Ghana ,0,,[''],,,
+2011,380,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,379,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,378,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,,,Ethiopia,0,,[''],,,
+2011,377,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,376,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,375,AU,Australia,AU,Australia,AU,Australia,AU,Australia,,,,,Australia,0,,[''],,,
+2011,374,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,373,CN,China,CN,China,CN,China,CN,China,,,,,China,0,,[''],,,
+2011,372,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,371 *entry retracted as requested,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia,1,retraction,[''],,,
+2011,370,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,369,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,"Singapore Management University 
+Singapore Management University 
+",,Singapore,0,,[''],,,
+2011,368,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,367,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,366,,,,,,,,,,,,,,0,,[''],,,
+2011,365,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,364,MW,Malawi,MW,Malawi,MW,Malawi,MW,Malawi,,,,,Malawi ,0,,[''],,,
+2011,363,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,"University of Indonesia 
+Midwifery School 
+Trisakti University ",,Iraq ,0,,[''],,,
+2011,362,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,"Ateneo de Manila University 
+Ateneo de Manila University 
+Ateneo de Manila University ",,Philippines ,0,,[''],,,
+2011,361,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,,,Palestinian Territory ,0,,[''],,,
+2011,360,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,Gallaudet University ,,Kenya ,0,,[''],,,
+2011,359,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa ,0,,[''],,,
+2011,358,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa,0,,[''],,,
+2011,357,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,356,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,355,AF,Afghanistan,AF,Afghanistan,AF,Afghanistan,AF,Afghanistan,,,,,Afghanistan ,0,,[''],,,
+2011,354,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,353,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,Santa Clara University ,,Ghana ,0,,[''],,,
+2011,352,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,"Nanyang Technological University 
+Nanyang Technological University ",,Singapore,0,,[''],,,
+2011,351,MW,Malawi,MW,Malawi,MW,Malawi,MW,Malawi,,,,,Malawi ,0,,[''],,,
+2011,350,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,University of the Philippines Diliman ,,Philippines,0,,[''],,,
+2011,349,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,348,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,347,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,"Nanyang Technological University 
+Nanyang Technological University ",,Singapore ,0,,[''],,,
+2011,346,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,Seogwipo girl's High school ,,"Korea, South ",0,,[''],,,
+2011,345,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,,,Pakistan ,0,,[''],,,
+2011,344,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,343,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,342,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,"Brunnel Univeristy 
+",,Uganda ,0,,[''],,,
+2011,341,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,,,paleastinian ,0,,[''],,,
+2011,340,,,,,,,,,,,,,,0,,[''],,,
+2011,339,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,338,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,337,ML,Mali,ML,Mali,ML,Mali,ML,Mali,,,Gokseong high school ,,Mali ,0,,[''],,,
+2011,336,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,NASA College ,,Nepal ,0,,[''],,,
+2011,335,IN,India,IN,India,IN,India,IN,India,,,"E-learning Lab, Department of Communication& Psychology, Aalborg University, Denmark ",,India,0,,[''],,,
+2011,334,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,University of Cape Town ,,South Africa ,0,,[''],,,
+2011,333,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,332,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South",0,,[''],,,
+2011,331,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,,,,,Bangladesh ,0,,[''],,,
+2011,330,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,329,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,Kyunghee University ,,"Korea, South",0,,[''],,,
+2011,328,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe,0,,[''],,,
+2011,327,BT,Bhutan,BT,Bhutan,BT,Bhutan,BT,Bhutan,,,Graduated from Thammasat University (M.A. Women's studies) ,,Bhutan ,0,,[''],,,
+2011,326,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,325,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,,,,,East Timor ,0,,[''],,,
+2011,324,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa ,0,,[''],,,
+2011,323,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,322,IN,India,IN,India,IN,India,IN,India,,," India Institute of Medical Sciences 
+Art Center college of Design ",,India ,0,,[''],,,
+2011,321,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,320,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania ,0,,[''],,,
+2011,319,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,318,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,,,,,Laos ,0,,[''],,,
+2011,317,TH,Thailand,TH,Thailand,TH,Thailand,TH,Thailand,,,,,Thailand ,0,,[''],,,
+2011,316,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South",0,,[''],,,
+2011,315,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,,,,,Laos,0,,[''],,,
+2011,314,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa ,0,,[''],,,
+2011,313,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,312,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa,0,,[''],,,
+2011,311,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,310,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia ,0,,[''],,,
+2011,309,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South ",0,,[''],,,
+2011,308,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania,0,,[''],,,
+2011,307,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,"Bandung Institute of Technology 
+",,Indonesia,0,,[''],,,
+2011,306,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,RWANDA TOURSIM UNIVERSITY COLLEGE ,,Rwanda,0,,[''],,,
+2011,305,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,University for development studies-Ghana ,,Ghana,0,,[''],,,
+2011,304,US,United States,US,United States,US,United States,US,United States,,,,,United States,0,,[''],,,
+2011,303,MA,Morocco,MA,Morocco,MA,Morocco,MA,Morocco,,,,,Morocco,0,,[''],,,
+2011,302,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,LA,Lao People's Democratic Republic,,,,,Laos ,0,,[''],,,
+2011,301,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,300,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Benson Idahosa University (BSc, Biochemistry 2010) 
+Ambrose Ali University (BSc, Microbiology 2006) ",,Nigeria ,0,,[''],,,
+2011,299,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,298,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,"Hebron University 
+",,Palestinian Territory,0,,[''],,,
+2011,297,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe,0,,[''],,,
+2011,296,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,BIRMINGHAM UNIVERSITY ,,Uganda ,0,,[''],,,
+2011,295,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,,,Zambia,0,,[''],,,
+2011,294,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,293,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,292,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"NATIONAL UNIVERSITY OF RWANDA 
+ ",,Rwanda ,0,,[''],,,
+2011,291,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,"Jomo Kenyatta University of Agriculture and Technology 
+",,Kenya ,0,,[''],,,
+2011,290,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National University of Rwanda 
+",,Rwanda ,0,,[''],,,
+2011,289,MY,Malaysia,MY,Malaysia,MY,Malaysia,MY,Malaysia,,,"The University of Nottingham Malaysia Campus 
+",,Malaysia ,0,,[''],,,
+2011,288,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe,0,,[''],,,
+2011,287,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,286,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,285,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,284,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,,,Palestinian Territory ,0,,[''],,,
+2011,283,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,282,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,"University of Cape Town 
+University of South Africa ",,South Africa,0,,[''],,,
+2011,281,IT,Italy,IT,Italy,IT,Italy,IT,Italy,,,,,Italy,0,,[''],,,
+2011,280,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,279,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,278,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,,,,,East Timor,0,,[''],,,
+2011,277,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,"Bahirdar University,Ethiopia ",,Ethiopia ,0,,[''],,,
+2011,276,CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",,,L2 Science Social ,,"Congo, Democratic Republic of the ",0,,[''],,,
+2011,275,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,274,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,"faculty of law, University of Dschang 
+faculty of agricultural sciences, University of Dschang 
+faculty of economic sciences, university of dschang ",,Cameroon ,0,,[''],,,
+2011,273,MU,Mauritius,MU,Mauritius,MU,Mauritius,MU,Mauritius,,,University of Mauritius ,,Mauritius ,0,,[''],,,
+2011,272,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,271,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,270,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,UNIVERSITY OF ZAMBIA ,,Zambia ,0,,[''],,,
+2011,269,BR,Brazil,BR,Brazil,BR,Brazil,BR,Brazil,,,,,Brazil ,0,,[''],,,
+2011,268,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"All Nations University College 
+",,Ghana,0,,[''],,,
+2011,267,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,Pukyung National University ,,Philippines ,0,,[''],,,
+2011,266,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal ,0,,[''],,,
+2011,265,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,"Cambodian Mekong University 
+",,Cambodia ,0,,[''],,,
+2011,264,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,263,AU,Australia,AU,Australia,AU,Australia,AU,Australia,,,"university Of Cape Coast 
+",,Australia ,0,,[''],,,
+2011,262,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,,,,,Bangladesh,0,,[''],,,
+2011,261,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,260,,,,,,,,,,,university of zambia ,,,0,,[''],,,
+2011,259,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,258,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,,,Iraq ,0,,[''],,,
+2011,257,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,"CITY SIDE SECONDARY SCHOOL, HOIMA SS 
+",,Uganda ,0,,[''],,,
+2011,256,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South ",0,,[''],,,
+2011,255,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,CHARTERED INSTITUTE OF PROCUREMENT AND LOGISTICS ,,Uganda ,0,,[''],,,
+2011,254,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,253,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,252,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia  ,0,,[''],,,
+2011,251,AU,Australia,AU,Australia,AU,Australia,AU,Australia,,,,,Australia ,0,,[''],,,
+2011,250,IN,India,IN,India,IN,India,IN,India,,,"Rengkai Government high school 
+Douglas Memorial high school ",,India ,0,,[''],,,
+2011,249,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,"Yonsei University, Seoul 
+",,"Korea, South ",0,,[''],,,
+2011,248,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,NIIT ,,Ghana ,0,,[''],,,
+2011,247,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,"University of Indonesia 
+",,Indonesia,0,,[''],,,
+2011,246,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,"Kinnard College for Women Lahore 
+",,Pakistan,0,,[''],,,
+2011,245,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South ",0,,[''],,,
+2011,244,IN,India,IN,India,IN,India,IN,India,,,Graduate From Cambridge College ,,India ,0,,[''],,,
+2011,243,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,"Semarang State University-Indonesia 
+",,Indonesia ,0,,[''],,,
+2011,242,LK,Sri Lanka,LK,Sri Lanka,LK,Sri Lanka,LK,Sri Lanka,,,,,Sri Lanka ,0,,[''],,,
+2011,241,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,240,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,239,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines ,0,,[''],,,
+2011,238,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,TL,Timor-Leste,,,,,East Timor ,0,,[''],,,
+2011,237,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,236,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,"An-Najah National Universty 
+",,Palestinian Territory ,0,,[''],,,
+2011,235,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,234,LR,Liberia,LR,Liberia,LR,Liberia,LR,Liberia,,,"PCAF Bible Training 
+Bundu Town Public School ",,Liberia ,0,,[''],,,
+2011,233,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,232,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,RWANDA NATIONAL UNIVERSITY ,,Rwanda ,0,,[''],,,
+2011,231,CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",CD,"Congo, the Democratic Republic of the",,,,,"Congo, Democratic Republic of the ",0,,[''],,,
+2011,230,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University of Cape Coast,Ghana ",,Ghana,0,,[''],,,
+2011,229,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,"Lugalo secondary school 
+Sangu secondary school ",,Tanzania ,0,,[''],,,
+2011,228,CF,Central African Republic,CF,Central African Republic,CF,Central African Republic,CF,Central African Republic,,,,,Central African Republic ,0,,[''],,,
+2011,227,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,226,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal ,0,,[''],,,
+2011,225,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,"Makerere University Kampala 
+ ",,Uganda,0,,[''],,,
+2011,224,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,,,Pakistan ,0,,[''],,,
+2011,223,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,,,Pakistan ,0,,[''],,,
+2011,222,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,221,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,220,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,219,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,Tohoku University ,,Cambodia ,0,,[''],,,
+2011,218,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,,,Zambia ,0,,[''],,,
+2011,217,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,216,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines ,0,,[''],,,
+2011,215,CN,China,CN,China,CN,China,CN,China,,,,,China ,0,,[''],,,
+2011,214,KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",KR,"Korea, Republic of",,,,,"Korea, South ",0,,[''],,,
+2011,213,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,,,South Africa,0,,[''],,,
+2011,212,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,211,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"KIGALI INDEPENDENT UNIVERSITY 
+RWANDA NATIONAL UNIVERSITY 
+CHRIST KING COLLEGE ",,Rwanda ,0,,[''],,,
+2011,210,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,,,Palestinian Territory ,0,,[''],,,
+2011,209,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,208,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,207,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,206,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,205,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,204,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University of Cape Coast, Ghana 
+",,Ghana ,0,,[''],,,
+2011,203,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,202,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,201,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia,0,,[''],,,
+2011,200,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,199,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,"Trust Academy 
+Natural Beauty Academy 
+Kwekwe Poly Technology ",,Zimbabwe,0,,[''],,,
+2011,198,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,197,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,196,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University for Development Studies, Wa, Ghana 
+University for Development Studies, Wa, Ghana ",,Ghana,0,,[''],,,
+2011,195,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia,0,,[''],,,
+2011,194,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,"Institute of communication studies, University of the Punjab, Lahore, Pakistan 
+Institute of communication studies, University of the Punjab, Lahore, Pakistan 
+Institute of communication studies, University of the Punjab, Lahore, Pakistan ",,Pakistan ,0,,[''],,,
+2011,193,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,university of zambia,,Zambia,0,,[''],,,
+2011,192,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia ,0,,[''],,,
+2011,191,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore,0,,[''],,,
+2011,190,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,189,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,"Eastern Laguna Colleges 
+University of the Philippines ",,Philippines ,0,,[''],,,
+2011,188,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,187,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,,,Ethiopia ,0,,[''],,,
+2011,186,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,"MAKERERE UNIVERSITY BUSINESS SCHOOL 
+",,Uganda ,0,,[''],,,
+2011,185,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"NATIONAL UNIVERSITY OF RWANDA 
+ ",,Rwanda ,0,,[''],,,
+2011,184,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,"Singapore Management University 
+Singapore Management University 
+Singapore Management University ",,Singapore,0,,[''],,,
+2011,183,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,"Stellenbosch University 
+Stellenbosch University ",,South Africa,0,,[''],,,
+2011,182,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore,0,,[''],,,
+2011,181,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"UNIVERSITY OF EDUCATION, WINNEBA GHANA 
+UNIVERSITY OF EDUCATION,WINNEBA,GHANA. DEPARTMENT OF HOME ECONOMICS ",,Ghana ,0,,[''],,,
+2011,180,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,179,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,178,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,,,Rwanda,0,,[''],,,
+2011,177,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,,,Ethiopia ,0,,[''],,,
+2011,176,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,Princeton University ,,Tanzania ,0,,[''],,,
+2011,175,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore,0,,[''],,,
+2011,174,,Africa,,Africa,,Africa,,Africa,,,,,Africa,0,,[''],,,
+2011,173,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon ,0,,[''],,,
+2011,172,MA,Morocco,MA,Morocco,MA,Morocco,MA,Morocco,,,,,Morocco ,0,,[''],,,
+2011,171,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,,,Rwanda,0,,[''],,,
+2011,170,PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",PS,"Palestine, State of",,,,,Palestinian Territory ,0,,[''],,,
+2011,169,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,,,Pakistan ,0,,[''],,,
+2011,168,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,167,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,166,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya ,0,,[''],,,
+2011,165,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,164,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,163,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,162,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,161,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,160,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania ,0,,[''],,,
+2011,159,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe ,0,,[''],,,
+2011,158,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,157,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,"Pannasastra University of Cambodia and SIDO Enterprise Training Class 
+Pannasastra University of Cambodia ",,Cambodia,0,,[''],,,
+2011,156,IN,India,IN,India,IN,India,IN,India,,,"Astitva School 
+",,India ,0,,[''],,,
+2011,155,MR,Mauritania,MR,Mauritania,MR,Mauritania,MR,Mauritania,,,,,Mauritania ,0,,[''],,,
+2011,154,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,153,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,UNIVERSITY OF ZAMBIA ,,Zambia,0,,[''],,,
+2011,152,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,151,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,150,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore ,0,,[''],,,
+2011,149,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,148,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,147,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"RIVERS STATE UNIVERSITY OF SCIENCE AND TECHNOLOGY, NKPOLU, PORT-HARCOURT, RIVERS STATE, NIGERIA 
+UNIVERSITY OF PORT-HARCOURT, RIVERS STATE, NIGERIA 
+SCHOOL OF HEALTH TECHNOLOGY, UFOMA, DELTA STATE, NIGERIA ",,Nigeria,0,,[''],,,
+2011,146,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,"Zambia Catholic University 
+",,Zambia ,0,,[''],,,
+2011,145,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,"Economic Faculty 
+Economic Development Study 
+Economic Development Study ",,Indonesia ,0,,[''],,,
+2011,144,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore,0,,[''],,,
+2011,143,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,142,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana,0,,[''],,,
+2011,141,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines,0,,[''],,,
+2011,140,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,139,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana ,0,,[''],,,
+2011,138,ZA,South Africa,ZA,South Africa,ZA,South Africa,ZA,South Africa,,,"university of the western cape 
+Oxbridge Academy 
+Damelin College ",,South Africa ,0,,[''],,,
+2011,137,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia,0,,[''],,,
+2011,136,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,"St. Camulus Secondary School 
+",,Kenya ,0,,[''],,,
+2011,135,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National University of Rwanda 
+Kigali Institute of Education ",,Rwanda ,0,,[''],,,
+2011,134,BI,Burundi,BI,Burundi,BI,Burundi,BI,Burundi,,,Burundi State University ,,Burundi ,0,,[''],,,
+2011,133,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,Chengwon Girl's High School ,,Cambodia ,0,,[''],,,
+2011,132,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,131,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Olabisi Onabanjo University 
+Adeniran Ogunsanya College Education ",,Nigeria ,0,,[''],,,
+2011,130,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,"Pannasastra University of Cambodia and SIDO Enterprise Training Class 
+Pannasastra University of Cambodia ",,Cambodia ,0,,[''],,,
+2011,129,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,128,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,127,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,"University of Buea 
+UIDB 
+University of Buea 
+",,Cameroon,0,,[''],,,
+2011,126,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National University of Rwanda 
+",,Rwanda ,0,,[''],,,
+2011,125 *proposal is similar/ identical to #50,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,UNIVERSITY FOR DEVELOPMENT STUDIES ,,Ghana ,1,duplicate of 2011-50,[''],,,
+2011,124,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,"Makerere University 
+Kyambogo University 
+St.John SSS Wakitaka ",,Uganda,0,,[''],,,
+2011,123,IN,India,IN,India,IN,India,IN,India,,,"profaile 
+",,India,0,,[''],,,
+2011,122,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,Graduate ,,Cameroon,0,,[''],,,
+2011,121,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,"Bachelor 
+Institute 
+Bachelor",,Iraq ,0,,[''],,,
+2011,120,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,"Social & Development Worker 
+Teacher 
+Seamstress 
+",,Cameroon ,0,,[''],,,
+2011,119,BE,Belgium,BE,Belgium,BE,Belgium,BE,Belgium,,,,,Belgium ,0,,[''],,,
+2011,118,MW,Malawi,MW,Malawi,MW,Malawi,MW,Malawi,,,,,Malawi ,0,,[''],,,
+2011,117,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,"Prince Takamado 
+Prince Chimuuti 
+New Mtendere ",,Zambia ,0,,[''],,,
+2011,116,CN,China,CN,China,CN,China,CN,China,,,,,China ,0,,[''],,,
+2011,115,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,NATIONAL YOUTH EMPOWERMENT NETWORK ,,Uganda ,0,,[''],,,
+2011,114,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,, Zimbabwe  ,0,,[''],,,
+2011,113,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria ,0,,[''],,,
+2011,112,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,,,"101 
+55",,Bangladesh ,0,,[''],,,
+2011,111,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"University of Agriculture Makurdi 
+Village Farmers 
+Institute of Forestry Ibadan ",,Nigeria,0,,[''],,,
+2011,110,CN,China,CN,China,CN,China,CN,China,,,,,China,0,,[''],,,
+2011,109,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,108,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,"matuga 
+waa 
+coast girls ",,Kenya,0,,[''],,,
+2011,107,,,,,,,,,,,,,,0,,[''],,,
+2011,106,KG,Kyrgyzstan,KG,Kyrgyzstan,KG,Kyrgyzstan,KG,Kyrgyzstan,,,,,Kyrgyzstan ,0,,[''],,,
+2011,105,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,, Nigeria  ,0,,[''],,,
+2011,104,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda ,0,,[''],,,
+2011,103,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,, Kenya ,0,,[''],,,
+2011,102,US,United States,US,United States,US,United States,US,United States,,,Westminster College ,,United States ,0,,[''],,,
+2011,101,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,ethno-eco fashion design project,,,Pakistan ,0,,[''],,,
+2011,100,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,learning English language is fun,,,Pakistan ,0,,[''],,,
+2011,99,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,University of Buea ,,Cameroon,0,,[''],,,
+2011,98,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,97,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Institute of management and Technology Enugu 
+Iyienu School of Nursing 
+Fedral polytechnic nekade ",,Nigeria,0,,[''],,,
+2011,96,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,Gaba University College ,,Kenya,0,,[''],,,
+2011,95,IN,India,IN,India,IN,India,IN,India,,"Society for enlightenment 
+and Empowerment ",,,India,0,,[''],,,
+2011,94,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,"National university of Rwanda 
+Groupe scolaire cyondo 
+Kigali institute of education ",,Rwanda,0,,[''],,,
+2011,93,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,Andrew Crawford Media School ,,Kenya ,0,,[''],,,
+2011,92,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenia,0,,[''],,,
+2011,91,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,Al-Rafidain Center for Ensuring human Rights,,Iraq,0,,[''],,,
+2011,90,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,,,Rwanda ,0,,[''],,,
+2011,89,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,"“Hidden Gem-A Key To Women Empowerment”, is the title of our project. This project is sought to empower women and girls in my community through training and development of income generating businesses.",,,Ghana,0,,[''],,,
+2011,88,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,"University of Sindh
+University of Sindh                     NA
+",,Pakistan,0,,[''],,,
+2011,87,,,,,,,,,,,,,,0,,[''],,,
+2011,86,SE,Sweden,SE,Sweden,SE,Sweden,SE,Sweden,,,"Lund University 
+",,Sweden,0,,[''],,,
+2011,85,CN,China,CN,China,CN,China,CN,China,,,Yothok Yoden Gopo Medical Association,,China,0,,[''],,,
+2011,84,CN,China,CN,China,CN,China,CN,China,,,,,China,0,,[''],,,
+2011,83,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],Empowerming women living in poverty with life skills an provide them with financial support to help them fend for themselves,,
+2011,82,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,81,IN,India,IN,India,IN,India,IN,India,,,Accion International,,India,0,,[''],,,
+2011,80,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,79,IN,India,IN,India,IN,India,IN,India,,YUVA - Youth For Unity and Voluntary Action ,,,India,0,,[''],,,
+2011,78,SG,Singapore,SG,Singapore,SG,Singapore,SG,Singapore,,,,,Singapore,0,,[''],,,
+2011,77,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,Hopeful Child Educational Initiative organization,,,Nigeria,0,,[''],,,
+2011,76,IN,India,IN,India,IN,India,IN,India,,,,,India ,0,,[''],,,
+2011,75,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,74,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,"University Of Ghana 
+Health Assistants' (Clinical) Training School, Yendi 
+Northern School of Business ",,Ghana ,0,,[''],,,
+2011,73,LR,Liberia,LR,Liberia,LR,Liberia,LR,Liberia,,,"University of Liberia 
+United Methodist University 
+University of Liberia ",,Liberia,0,,[''],,,
+2011,72,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,Alind Organization For Youth Democratizing,,Iraq,0,,[''],"Alind is a  humanitarian organization, voluntary, non-governmental, independent, working to build a democratic society  through the democratization of youth",,
+2011,71,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,BREEZES OF HOPE FOR COMMUNITY DEVELOPMENT,,Tanzania,0,,[''],,,
+2011,70,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],"JUMUIYA WOMEN GROUP is a welfare group, registered in 2001 as a Community Based Organization (CBO) with an active program on advocacy and lobbying. It aims to achieve its goals through networking, civic education, training, research, advocacy, lobbying and information collection, packaging and exchange.  The group derives its strength from the diversity of expertise and experience of its membership and allies. It strives to articulate plurality, human rights, health, security, dignity, freedom, environmental protection, justice and peace for all people and open up democratic space for women’s organizations in North Rift from its base in Uasin- Gishu district, KENYA.",,
+2011,69,ZM,Zambia,ZM,Zambia,ZM,Zambia,ZM,Zambia,,,"Charity Centre for Children and Youth Development 
+",,Zambia,0,,[''],,,
+2011,68,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,67,CA,Canada,CA,Canada,CA,Canada,CA,Canada,,,,,Canada,0,,[''],,,
+2011,66,KH,Cambodia,KH,Cambodia,KH,Cambodia,KH,Cambodia,,,,,Cambodia,0,,[''],,,
+2011,65,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,"Oklahoma State University ; Goldsmiths' University of London 
+",,Pakistan,0,,[''],,,
+2011,64,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Federal Polytechnic Nekede, Owerri 
+",,Nigeria,0,,[''],,,
+2011,,,,,,,,,,,,"Imo State University Owerri 
+",,,0,,[''],,,
+2011,63,LB,Lebanon,LB,Lebanon,LB,Lebanon,LB,Lebanon,,,“Daily Planet” NGO,,"Beirut,Lebanon",0,,[''],,,
+2011,62,,"*United Kingdom (submittor) 
+*Pakistan (benficiary)",,"*United Kingdom (submittor) 
+*Pakistan (benficiary)",,"*United Kingdom (submittor) 
+*Pakistan (benficiary)",,"*United Kingdom (submittor) 
+*Pakistan (benficiary)",,,,,"*United Kingdom (submittor) 
+*Pakistan (benficiary) ",0,,[''],"Hope for Suffering Humanity in Gojra Pakistan. The Christians there are currently suffering a severe shortage of food and clothing, basic human needs. Following the blasphemy laws introduced, they are marginalized and unable to find work to provide for their families. I would like to nominate them as a possible recipient of emergency funding and am already running a personal campaign to try and raise awareness of their specific needs. 
+
+Note: submission from NGO",,
+2011,61,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],"The project intends to reach poor women and out of school youths without employement through apprentiship program where already established women and youth artisans/apprentice attach other women and youth to gain the same skills after which they are trained and mentored on basic entrepreneurship and then linked to micro lending institutions to loans to establish businesses. This way, the skill is passed from a woman to woman or from youth to youth at no cost which is also sustainable.",,
+2011,60,PH,Philippines,PH,Philippines,PH,Philippines,PH,Philippines,,,,,Philippines ,0,,[''],"Create a livlihood/training center for women in Philippines: The center will provide skills that will help her family or herself earn income on their own or thru employment. One of the training would be cooking, sewing, handicrafts, manicure/pedicure etc. Women that falls on this category has also a chance to become a trainer, once she is trained she is required to train two women on the skills that she acquired in the training center then each women will also train two women until such time  that all women in the world has the capacity to contribute to the society.",,
+2011,59,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda; Kenya,0,,[''],,,
+2011,58,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,57,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,56,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,Community Development; Gender and development; Project planning and management; Community Development training Institute,,Tanzania,0,,[''],,,
+2011,55,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania,0,,[''],,,
+2011,54,RW,Rwanda,RW,Rwanda,RW,Rwanda,RW,Rwanda,,,national univerity of rwanda,,Rwanda,0,,[''],,,
+2011,53,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,,,Nigeria,0,,[''],,,
+2011,52,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,51,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,50 *proposal is similar/ identical to #125,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana,0,,[''],,,
+2011,49,NP,Nepal,NP,Nepal,NP,Nepal,NP,Nepal,,,,,Nepal,0,,[''],,,
+2011,48,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,,,Tanzania,0,,[''],,,
+2011,47,CN,China,CN,China,CN,China,CN,China,,,,,China,0,,[''],Improvement of students education and local people's livilihood in Rage village,,
+2011,46,IN,India,IN,India,IN,India,IN,India,,,Katihar Girls High School; Uma Devi Girls High School; Kishanganj High School,,India,0,,[''],,,
+2011,45,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,44,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana,0,,[''],,,
+2011,43,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,"Ebo Primary School - Volunteers
+Evening Continuing Education Centre - Volunteer
+Community Secondary School- Volunteers",,Nigeria,0,,[''],,,
+2011,42,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,Radical Glorify Social Welfare Association,,Pakistan,0,,[''],,,
+2011,41,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,40,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,Resource Agency For Girls Education & Training (RAGE &T); Sirili M. Akko,,Tanzania,0,,[''],,,
+2011,39,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,BD,Bangladesh,,,,,Bangladesh,0,,[''],,,
+2011,38,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,"Government school,mankon bamenda; Phytbiotech Research Foundation",,Cameroon,0,,[''],,,
+2011,37,TH,Thailand,TH,Thailand,TH,Thailand,TH,Thailand,,,,,Thailand,0,,[''],,,
+2011,36,IN,India,IN,India,IN,India,IN,India,,,,,India,0,,[''],,,
+2011,35,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,TODAY'S WOMAN ORGANIZATION (TWO) BALOCHISTAN,,Pakistan,0,,[''],,,
+2011,34,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,33,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,32,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,Not applicable,,Tanzania,0,,[''],,,
+2011,31,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,,,Ghana,0,,[''],,,
+2011,30,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,29,GH,Ghana,GH,Ghana,GH,Ghana,GH,Ghana,,,University for Development Studies. Wa Campus,,Ghana,0,,[''],,,
+2011,28,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,,,Pakistan,0,,[''],,,
+2011,27,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,26,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,,,Indonesia,0,,[''],,,
+2011,25,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,24,LR,Liberia,LR,Liberia,LR,Liberia,LR,Liberia,,,,,Liberia,0,,[''],,,
+2011,23,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,22,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,RACECOURSE H.SCHOOL; GABA CATHOLIC UNIVERSITY,,Kenya,0,,[''],,,
+2011,21,ID,Indonesia,ID,Indonesia,ID,Indonesia,ID,Indonesia,,,"Jakarta Institute of Art, Art and Design faculty; Trisakti University, Architecture Engineering ",,Indonesia,0,,[''],,,
+2011,20,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,Zimbabwe School of Medicine,,Zimbabwe,0,,[''],,,
+2011,19,AF,Afghanistan,AF,Afghanistan,AF,Afghanistan,AF,Afghanistan,,,Community-Based Schools,,Afghanistan,0,,[''],,,
+2011,18,IQ,Iraq,IQ,Iraq,IQ,Iraq,IQ,Iraq,,,,,Iraq,0,,[''],,,
+2011,17,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,ZW,Zimbabwe,,,,,Zimbabwe,0,,[''],,,
+2011,16,IN,India,IN,India,IN,India,IN,India,,,RURAL PHYSICALLY HANDICAPPED CENTER FOR REHABILITATION,,India,0,,[''],,,
+2011,15,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,,,Uganda,0,,[''],,,
+2011,14,LK,Sri Lanka,LK,Sri Lanka,LK,Sri Lanka,LK,Sri Lanka,,,,,Sri Lanka,0,,[''],,,
+2011,13,KE,Kenya,KE,Kenya,KE,Kenya,KE,Kenya,,,,,Kenya,0,,[''],,,
+2011,12,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,New Age Development Initiative (NADI),,Nigeria,0,,[''],,,
+2011,11,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,"Feversham College (A levels), UK; Bradford College (A levels), UK; Beaconhouse school system (o levels), Pakistan",,Pakistan,0,,[''],,,
+2011,10,SL,Sierra Leone,SL,Sierra Leone,SL,Sierra Leone,SL,Sierra Leone,,,vermont law School,,Sierra Leon,0,,[''],,,
+2011,9,TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",TZ,"Tanzania, United Republic of",,,MWISENGE SCHOOL; MWEMBENI SCHOOL; MUSOMA UTALII,,Tanzania,0,,[''],,,
+2011,8,CM,Cameroon,CM,Cameroon,CM,Cameroon,CM,Cameroon,,,,,Cameroon,0,,[''],,,
+2011,7,UG,Uganda,UG,Uganda,UG,Uganda,UG,Uganda,,,KIHANGA MUSLIM YOUTH DVELOMENT ASSOCIATION,,Uganda,0,,[''],,,
+2011,6,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,ET,Ethiopia,,,,,Ethiopia,0,,[''],,,
+2011,5,SO,Somalia,SO,Somalia,SO,Somalia,SO,Somalia,,,HIGHT SCHOLS FOR GIRL,,Somalia,0,,[''],,,
+2011,4,VN,Viet Nam,VN,Viet Nam,VN,Viet Nam,VN,Viet Nam,,,,,Vietnam,0,,[''],,,
+2011,3,NG,Nigeria,NG,Nigeria,NG,Nigeria,NG,Nigeria,,,RAINBOW GATE FOUNDATION NIGERIA,,Nigeria,0,,[''],,,
+2011,2,PK,Pakistan,PK,Pakistan,PK,Pakistan,PK,Pakistan,,,Just Peace international,,Pakistan,0,,[''],,,
+2011,1,IN,India,IN,India,IN,India,IN,India,,,Mahila Jagrati Mandal,,India,0,,[''],,,

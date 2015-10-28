@@ -3,6 +3,7 @@
 library(dplyr)
 library(jsonlite)
 library(openxlsx)
+#library(readr)
 
 # ===========================================================================
 # Processing
@@ -16,55 +17,79 @@ inspire2013 <- fromJSON("../data/cleaned_applications_2013.json")
 inspire2014 <- fromJSON("../data/cleaned_applications_2014.json")
 inspire2015 <- fromJSON("../data/cleaned_applications_2015.json")
 
+# inspire2011 <- read_csv("../data/cleaned_applications_2011.csv")
+# inspire2012 <- read_csv("../data/cleaned_applications_2012.csv")
+# inspire2013 <- read_csv("../data/cleaned_applications_2013.csv")
+# inspire2014 <- read_csv("../data/cleaned_applications_2014.csv")
+# inspire2015 <- read_csv("../data/cleaned_applications_2015.csv")
+
 inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
 
-inspire_cleaned <- inspire %>% 
-    select(project_year, country_application, country_application_name, country_impact, country_impact_name) %>%
-    filter(country_application != "")
+inspire <- inspire %>% 
+    select(project_year, country_application, country_application_name, country_impact, country_impact_name) #%>%
+    #filter(country_application != "")
 
-inspire_cleaned$project_year <- factor(inspire_cleaned$project_year)
+inspire$project_year <- factor(inspire$project_year)
+
+# processes applied countries and impact countries separately
+# filters out blank country codes or country names that are blank
+inspire_applied_blanks <- inspire %>%
+    filter(country_application_name == "" | country_application == "")
+write.xlsx(inspire_applied_blanks,file = "../data/filtered_applied_countries.xlsx")
+
+inspire_applied <- inspire %>%
+    filter(country_application_name != "" & country_application != "")
+
+inspire_impact_blanks <- inspire %>%
+    filter(country_impact_name == "" | country_impact == "")
+write.xlsx(inspire_impact_blanks,file = "../data/filtered_impact_countries.xlsx")
+
+inspire_impact <- inspire %>%
+    filter(country_impact_name != "" & country_impact != "")
+
+
 
 # ===========================================================================
 # Analysis
 # ===========================================================================
 
 # Name of all countries that applied per year, 2011 - 2015
-inspire_country_names_applied <- inspire_cleaned %>% 
+inspire_country_names_applied <- inspire_applied %>% 
     group_by(project_year) %>% 
     select(country_application_name) %>%
-    unique() %>%
+    distinct(country_application_name) %>%
     arrange(country_application_name)
 write.xlsx(inspire_country_names_applied, file = "../data/01 application country names per year.xlsx")
 
 # Name of all countries that were impacted per year, 2011 - 2015
-inspire_country_names_impacted <- inspire_cleaned %>% 
+inspire_country_names_impacted <- inspire_impact %>% 
     group_by(project_year) %>% 
     select(country_impact_name) %>%
-    unique() %>%
+    distinct(country_impact_name) %>%
     arrange(country_impact_name)
 write.xlsx(inspire_country_names_impacted, file = "../data/02 impact country names per year.xlsx")
 
 # Number of countries that applied per year, 2011 - 2015
-inspire_countries_applied <- inspire_cleaned %>% 
+inspire_countries_applied <- inspire_applied %>% 
     group_by(project_year) %>% 
     summarise(count=length(country_application_name))
 write.xlsx(inspire_countries_applied, file = "../data/03 application country numbers per year.xlsx")
 
 # Number of countries that were impacted per year, 2011 - 2015
-inspire_countries_impact <- inspire_cleaned %>% 
+inspire_countries_impact <- inspire_impact %>% 
     group_by(project_year) %>% 
     summarise(count=length(country_impact_name))
 write.xlsx(inspire_countries_impact, file = "../data/04 impact country numbers per year.xlsx")
 
 
 #Application numbers per year for each country, 2011 - 2015
-inspire_numbers_applied <- inspire_cleaned %>% 
+inspire_numbers_applied <- inspire_applied %>% 
     group_by(project_year, country_application_name) %>% 
     summarise(count=length(country_application_name))
 write.xlsx(inspire_numbers_applied, file = "../data/05 application country numbers per year per country.xlsx")
 
 #Impact numbers per year for each country, 2011 - 2015
-inspire_numbers_impact <- inspire_cleaned %>% 
+inspire_numbers_impact <- inspire_impact %>% 
     group_by(project_year, country_impact_name) %>% 
     summarise(count=length(country_impact_name))
 write.xlsx(inspire_numbers_impact, file = "../data/06 impact country numbers per year per country.xlsx")
@@ -78,7 +103,10 @@ write.xlsx(inspire_numbers_impact, file = "../data/06 impact country numbers per
 # Output is grouped by year
 # ===========================================================================
 
-country_impact_lookup <- inspire_cleaned %>% select(country_impact,country_impact_name) %>% unique()
+country_impact_lookup <- inspire_impact %>% 
+    select(country_impact,country_impact_name) %>% 
+    distinct(country_impact_name) %>%
+    arrange(country_impact_name)
 
 inspire_numbers_impact_merged <- left_join(inspire_numbers_impact, country_impact_lookup, by = "country_impact_name")
 

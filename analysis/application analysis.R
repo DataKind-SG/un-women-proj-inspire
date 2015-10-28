@@ -17,6 +17,12 @@ inspire2013 <- fromJSON("../data/cleaned_applications_2013.json")
 inspire2014 <- fromJSON("../data/cleaned_applications_2014.json")
 inspire2015 <- fromJSON("../data/cleaned_applications_2015.json")
 
+# inspire2011 <- read_csv("../data/cleaned_applications_2011.csv")
+# inspire2012 <- read_csv("../data/cleaned_applications_2012.csv")
+# inspire2013 <- read_csv("../data/cleaned_applications_2013.csv")
+# inspire2014 <- read_csv("../data/cleaned_applications_2014.csv")
+# inspire2015 <- read_csv("../data/cleaned_applications_2015.csv")
+
 inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
 
 inspire <- inspire %>% 
@@ -29,14 +35,14 @@ inspire$project_year <- factor(inspire$project_year)
 # filters out blank country codes or country names that are blank
 inspire_applied_blanks <- inspire %>%
     filter(country_application_name == "" | country_application == "")
-write.xlsx(inspire_applied_blanks,file = "../data/blanks_applied_countries.xlsx")
+write.xlsx(inspire_applied_blanks,file = "../data/filtered_applied_countries.xlsx")
 
 inspire_applied <- inspire %>%
     filter(country_application_name != "" & country_application != "")
 
 inspire_impact_blanks <- inspire %>%
     filter(country_impact_name == "" | country_impact == "")
-write.xlsx(inspire_impact_blanks,file = "../data/blanks_impact_countries.xlsx")
+write.xlsx(inspire_impact_blanks,file = "../data/filtered_impact_countries.xlsx")
 
 inspire_impact <- inspire %>%
     filter(country_impact_name != "" & country_impact != "")

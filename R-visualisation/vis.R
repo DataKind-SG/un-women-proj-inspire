@@ -6,9 +6,10 @@ country <- read.csv("data/Country_List_ISO_3166_Codes_Latitude_Longitude.csv")
 country_data <- fromJSON("data/impacted.json")
 
 data_2015 <- left_join(country_data$year_2011, country, c("code" = "Alpha.2.code"))
-head(data_2015)
 
-m <- leaflet(data) %>%
+s = 2
+m <- leaflet(width = floor(s*512), height=floor(s*265)) %>%
+  setView(lng = 103.8, lat = 35, zoom=2) %>%
   addProviderTiles("Stamen.Toner") %>%
   addCircleMarkers(
     lng=data_2015$Longitude..average., 
@@ -16,4 +17,4 @@ m <- leaflet(data) %>%
     radius=data_2015$z,
     popup=data_2015$Country)
 
-plot(m)
+print(m)

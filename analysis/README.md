@@ -27,7 +27,7 @@ Required files:
 
 Execution
 ---------
-In RStudio, you can open the file, setwd() to the directory where the analysis directory is and run the entire file by clicking on "Source" button
+In RStudio, you can open the file, setwd() to the directory where the analysis directory is (Or click on Session > Set Working Directory > To Source FIle Location) and run the entire file by clicking on "Source" button
 
 Alternatively, in command line, navigate to the "analysis" directory and execute the following command:
 
@@ -47,3 +47,7 @@ In the /data directory, the following files will be created:
 - impacted.json
 
 Note: "impacted.json" file is intended for visualization purposes.
+
+Additionally, the following files are created to help assist in identifying blank applied/impact country names/codes:
+- filtered_applied_countries.xlsx
+- filtered_impact_countries.xlsx

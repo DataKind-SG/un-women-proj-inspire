@@ -3,7 +3,7 @@
 library(dplyr)
 library(jsonlite)
 library(openxlsx)
-#library(readr)
+library(readr)
 
 # ===========================================================================
 # Processing
@@ -11,23 +11,17 @@ library(openxlsx)
 #                        country_impact, country_impact_name
 # ===========================================================================
 
-inspire2011 <- fromJSON("../data/cleaned_applications_2011.json")
-inspire2012 <- fromJSON("../data/cleaned_applications_2012.json")
-inspire2013 <- fromJSON("../data/cleaned_applications_2013.json")
-inspire2014 <- fromJSON("../data/cleaned_applications_2014.json")
-inspire2015 <- fromJSON("../data/cleaned_applications_2015.json")
-
-# inspire2011 <- read_csv("../data/cleaned_applications_2011.csv")
-# inspire2012 <- read_csv("../data/cleaned_applications_2012.csv")
-# inspire2013 <- read_csv("../data/cleaned_applications_2013.csv")
-# inspire2014 <- read_csv("../data/cleaned_applications_2014.csv")
-# inspire2015 <- read_csv("../data/cleaned_applications_2015.csv")
+inspire2011 <- read_csv("../data/cleaned_applications_2011.csv", na=character())
+inspire2012 <- read_csv("../data/cleaned_applications_2012.csv", na=character())
+inspire2013 <- read_csv("../data/cleaned_applications_2013.csv", na=character())
+inspire2014 <- read_csv("../data/cleaned_applications_2014.csv", na=character())
+inspire2015 <- read_csv("../data/cleaned_applications_2015.csv", na=character())
 
 inspire <- rbind(inspire2011, inspire2012, inspire2013, inspire2014, inspire2015)
 
 inspire <- inspire %>% 
-    select(project_year, country_application, country_application_name, country_impact, country_impact_name) #%>%
-    #filter(country_application != "")
+    filter(is_deleted != 1) %>%
+    select(project_year, country_application, country_application_name, country_impact, country_impact_name)
 
 inspire$project_year <- factor(inspire$project_year)
 

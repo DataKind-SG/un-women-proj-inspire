@@ -9,7 +9,7 @@ country_data <- fromJSON("data/impacted.json")
 data_2015 <- left_join(country_data$year_2015, country, c("code" = "Alpha.2.code"))
 
 s = 4
-n = 60
+n = 10
 start.lng <- 103.8
 start.lat <- 35
 start.zoom <- 3
@@ -36,8 +36,7 @@ for (l in 0:n){
   m <- m %>%
     setView(lng=start.lng + l*lng.delta, lat=start.lat + l*lat.delta, zoom=floor(start.zoom+l*zoom.delta))
   
-  print(paste("shot", l, ".html", sep=""))
   Sys.sleep(1)
   print(m)
-  saveWidget(m, paste("shot", l, ".html", sep=""))
+  saveWidget(m, sprintf("shot%03d.html", l))
 }

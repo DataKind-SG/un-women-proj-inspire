@@ -21,9 +21,10 @@ Required packages:
 - dplyr
 - jsonlite
 - openxlsx
+- readr
 
 Required files:
-- cleaned files for each year in json format in the "data" directory
+- cleaned files for each year in CSV format in the "data" directory
 
 Execution
 ---------

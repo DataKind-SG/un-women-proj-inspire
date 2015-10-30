@@ -123,4 +123,6 @@ output <- list(
     year_2015 = impacted2015
 )
 
-write(toJSON(output, pretty = TRUE), "../data/impacted.json")
+outfile <- file("../data/impacted.json",encoding="UTF-8")
+write(toJSON(output, pretty = TRUE), file=outfile)
+close(outfile)

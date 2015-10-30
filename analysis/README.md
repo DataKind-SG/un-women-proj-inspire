@@ -11,6 +11,8 @@ This is the readme file for the "application analysis.R" file. This file analyse
 
 The analysis will create Excel (XLSX) files for answering the above questions. It will additionally create a JSON file for the purposes of visualization.
 
+NOTE: For details on `custom_json.R`, please refer to the /data/custom/README.md file.
+
 Pre-requisites
 --------------
 This code has been tested on the following:
@@ -28,7 +30,7 @@ Required files:
 
 Execution
 ---------
-In RStudio, you can open the file, setwd() to the directory where the analysis directory is (Or click on Session > Set Working Directory > To Source FIle Location) and run the entire file by clicking on "Source" button
+In RStudio, you can open the file, setwd() to the directory where the analysis directory is (Or click on Session > Set Working Directory > To Source FIle Location) and run the `application analysis.R` file by clicking on "Source" button
 
 Alternatively, in command line, navigate to the "analysis" directory and execute the following command:
 
